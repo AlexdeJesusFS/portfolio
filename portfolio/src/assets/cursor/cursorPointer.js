@@ -1,8 +1,8 @@
-const cursorPointer = ({color="white", width="77px", height="40px", ...props}) => (
+const cursorPointer = ({color="white", stroke="black", width="77px", height="40px", ...props}) => (
 
     <svg width={width} height={height}
     viewBox="0 0 195 178" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path fill={color} stroke="black" stroke-width="8"
+    <path fill={color} stroke={stroke} stroke-width="8"
     d="M121.249 45.6208L120.143 47.6036L121.278 49.5699L189.462 167.669C191.251 170.767 188.383 174.476 184.935 173.525L100.709 150.297C98.6304 149.723 96.436 149.721 94.3562 150.289L9.07959 173.585C5.63286 174.527 2.77486 170.821 4.56138 167.727L72.5273 50.0062L73.6834 48.0038L72.5252 46.0025C70.1432 41.8869 68.7786 37.1089 68.7786 32C68.7786 16.536 81.3146 4 96.7786 4C112.243 4 124.779 16.536 124.779 32C124.779 36.9523 123.496 41.593 121.249 45.6208Z"/>
     </svg>
 );

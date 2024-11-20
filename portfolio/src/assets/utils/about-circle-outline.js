@@ -1,4 +1,4 @@
-const aboutCircle = ({color="white", size="25px", ...props}) => (
+const aboutCircle = ({color="currentColor", size="25px", ...props}) => (
 
     <svg width={size} height={size}
     viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">

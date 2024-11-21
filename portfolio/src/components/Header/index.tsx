@@ -1,5 +1,5 @@
 import { Container, LeftSide, Menu, IconContainer } from "./styles"
-import LinkButton from "../LinkButton/index";
+import HeaderButton from "../HeaderButton/index";
 import IconHome from "../../assets/utils/home";
 import IconAbout from "../../assets/utils/about-circle-outline";
 import IconConstruct from "../../assets/utils/construct-outline";
@@ -13,10 +13,10 @@ function Header() {
                 <h6>Alex de Jesus</h6>
             </LeftSide>
             <Menu>
-                <LinkButton>Home{<IconContainer><IconHome /></IconContainer>}</LinkButton>
-                <LinkButton>Sobre{<IconContainer><IconAbout /></IconContainer>}</LinkButton>
-                <LinkButton>Projetos{<IconContainer><IconConstruct /></IconContainer>}</LinkButton>
-                <LinkButton>Fale comigo{<IconContainer><IconChat /></IconContainer>}</LinkButton>
+                <HeaderButton>Home{<IconContainer><IconHome /></IconContainer>}</HeaderButton>
+                <HeaderButton>Sobre{<IconContainer><IconAbout /></IconContainer>}</HeaderButton>
+                <HeaderButton>Projetos{<IconContainer><IconConstruct /></IconContainer>}</HeaderButton>
+                <HeaderButton>Fale comigo{<IconContainer><IconChat /></IconContainer>}</HeaderButton>
             </Menu>
         </Container>
     );
@@ -24,7 +24,7 @@ function Header() {
 
 export default Header;
 /* 
-altIcon="Ícone circular de informação/sobre">{"Sobre"}</LinkButton>
-altIcon="Ícone de ferramentas cruzadas/projetos">{"Projetos"}</LinkButton>
-altIcon="Ícone de balão de fala/chat">{"Fale comigo"}</LinkButton>
+altIcon="Ícone circular de informação/sobre">{"Sobre"}</HeaderButton>
+altIcon="Ícone de ferramentas cruzadas/projetos">{"Projetos"}</HeaderButton>
+altIcon="Ícone de balão de fala/chat">{"Fale comigo"}</HeaderButton>
 */

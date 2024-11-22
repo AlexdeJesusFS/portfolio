@@ -1,9 +1,9 @@
 import { Container, LeftSide, Menu, IconContainer } from "./styles"
 import HeaderButton from "../HeaderButton/index";
-import IconHome from "../../assets/utils/home";
-import IconAbout from "../../assets/utils/about-circle-outline";
-import IconConstruct from "../../assets/utils/construct-outline";
-import IconChat from "../../assets/utils/chat-line";
+import IconHome from "../../assets/header-icons/home";
+import IconAbout from "../../assets/header-icons/about-circle-outline";
+import IconConstruct from "../../assets/header-icons/construct-outline";
+import IconChat from "../../assets/header-icons/chat-line";
 
 
 function Header() {

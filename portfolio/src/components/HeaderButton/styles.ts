@@ -15,7 +15,7 @@ export const Button = styled.button`
     cursor: pointer;
 
     /* text */
-    color: currentColor;
+    color: var(--Primary-water-green-900, #005647);
     font-family: "Fira Code";
     font-size: 14px;
     font-style: normal;

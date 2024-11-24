@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 
 export const Container = styled.header`
-
     display: flex;
     width: 100%;
     height: 80px;
@@ -16,7 +15,6 @@ export const Container = styled.header`
 `
 
 export const LeftSide = styled.div`
-
     display: flex;
     height: 48px;
     align-items: center;
@@ -25,7 +23,6 @@ export const LeftSide = styled.div`
 `
 
 export const Menu = styled.div`
-
     display: flex;
     height: 100%;
     padding: 15px 0px;
@@ -34,7 +31,6 @@ export const Menu = styled.div`
 `
 
 export const IconContainer = styled.span`
-
     display: flex; 
     justify-content: right; 
     margin-bottom: 4px; //ajusta o icone na melhor posição

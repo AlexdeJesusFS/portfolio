@@ -1,4 +1,7 @@
 import { createGlobalStyle } from "styled-components";
+import cursorDefault from "./assets/cursor/cursorDefault.svg";
+import cursorPointer from "./assets/cursor/cursorPointer.svg";
+import cursorText from "./assets/cursor/cursorText.svg";
 
 
 export default createGlobalStyle`
@@ -13,6 +16,15 @@ export default createGlobalStyle`
         margin: 0;
         padding: 0;
         background-color: #121212;
+        cursor: url(${cursorDefault}) 12 12, auto;
+    }
+
+    h1, h2, h3, h4, h5, h6, p {
+        cursor: url(${cursorText}) 12 12, text;
+    }
+
+    button, a {
+        cursor: url(${cursorPointer}), url(${cursorPointer}.cur), url(${cursorPointer}.png) 12 12, pointer; /* Fallbacks */
     }
 
     h1 {

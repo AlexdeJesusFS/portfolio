@@ -10,6 +10,7 @@ export const Container = styled.header`
     align-items: flex-start;
     gap: 10px;
     flex-shrink: 0;
+    position: fixed;
 
     background: var(--Primary-water-green-50, #E6FAF7);
 `

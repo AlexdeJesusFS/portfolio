@@ -2,7 +2,9 @@ import Header from "../../components/Header";
 import imgElipses from "../../assets/Elipses.png";
 import { 
   ContainerImgElipses, SectionAbout, SectionProjects, ContainerCards, ContainerBlur 
-} from "./styles"
+} from "./styles";
+import Card from "../../components/Card";
+import CardTag from "../../components/CardTag";
 
 
 function Home() {
@@ -21,10 +23,17 @@ function Home() {
       <ContainerBlur>
         <SectionProjects>
           <h3>Projetos.</h3>
-          <p>CARD</p>
-          <p>CARD</p>
-          <p>CARD</p>
-          <p>CARD</p>
+          <Card title="Company." text="Lorem ipsum odor amet, consectetuer adipiscing elit. Turpis magnis sapien varius ridiculus imperdiet himenaeos. Dignissim himenaeos suspendisse nascetur pretium vestibulum. Mollis et viverra parturient ornare a.">
+            <CardTag text="Text">Icon</CardTag>
+            <CardTag text="Text">Icon</CardTag>
+            <CardTag text="Text">Icon</CardTag>
+            <CardTag text="Text">Icon</CardTag>
+            <CardTag text="Text">Icon</CardTag>
+            <CardTag text="Text">Icon</CardTag>
+          </Card>
+          <Card title="Company." text="Lorem ipsum odor amet, consectetuer adipiscing elit. Turpis magnis sapien varius ridiculus imperdiet himenaeos. Dignissim himenaeos suspendisse nascetur pretium vestibulum. Mollis et viverra parturient ornare a.">
+            <CardTag text="Text">Icon</CardTag>
+          </Card>
           <p>CARD</p>
           <p>CARD</p>
           <p>CARD</p>
@@ -46,6 +55,6 @@ function Home() {
       </ContainerBlur>
     </>
   );
-}
+};
 
 export { Home };

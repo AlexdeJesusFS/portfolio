@@ -1,7 +1,7 @@
 import Header from "../../components/Header";
 import imgElipses from "../../assets/Elipses.png";
 import { 
-  ContainerImgElipses, SectionAbout, SectionProjects, ContainerCards, ContainerBlur, ColumnCards
+  ContainerImgElipses, SectionAbout, SectionProjects, ContainerCards, ContainerBlur, ColumnCards, SectionCertifications, ContainerCertifications, Certification
 } from "./styles";
 import Card from "../../components/Card";
 import CardTag from "../../components/CardTag";
@@ -60,6 +60,17 @@ function Home() {
           </ContainerCards>
         </SectionProjects>
       </ContainerBlur>
+
+      <SectionCertifications>
+        <h3>Certificações.</h3>
+          <ContainerCertifications>
+            <Certification>
+              <h6>certificação.</h6>
+              <p>alguma coisa</p>
+            </Certification>
+          </ContainerCertifications>
+          
+      </SectionCertifications>
     </>
   );
 };

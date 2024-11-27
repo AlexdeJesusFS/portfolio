@@ -11,6 +11,7 @@ export const Container = styled.header`
     gap: 10px;
     flex-shrink: 0;
     position: fixed;
+    z-index: 10; //Valor mais alto de elevação para impedir que outros elementos passem por cima
 
     background: var(--Primary-water-green-50, #E6FAF7);
 `

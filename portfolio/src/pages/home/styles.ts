@@ -49,8 +49,20 @@ export const ContainerCards = styled.div`
     align-self: stretch;
 `
 
+export const ColumnCards = styled.div`
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 24px;
+`
+
 export const ContainerBlur = styled.div`
     display: flex;
+    width: 100%;
+    background-position: 0% 20%;
 
     background-image: url(${imageBlur});
     background-size: cover;

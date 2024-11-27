@@ -15,10 +15,15 @@ export const Container = styled.div`
 
     /* Card Shadows/Heavy Shadow */
     box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.40);
+    /* Transição mais suave */
+    transition: box-shadow 0.4s ease-in-out, transform 0.4s ease-in-out;
+    z-index: 1;
 
     &:hover {
         border: 1.5px solid var(--Neutral-gray-0, #FFF);
-        box-shadow: 5px 15px 30px 5px rgba(0, 0, 0, 0.60);
+        /* Transição suave de sombra */
+        box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.40), 5px 15px 30px 5px rgba(0, 0, 0, 0.60);
+        transform: translateY(-2px); /* Elevação sutil */
     }
 `
 

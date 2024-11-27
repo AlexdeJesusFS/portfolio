@@ -62,8 +62,35 @@ export const ColumnCards = styled.div`
 export const ContainerBlur = styled.div`
     display: flex;
     width: 100%;
+    height: 1400px;
     background-position: 0% 20%;
 
     background-image: url(${imageBlur});
     background-size: cover;
+    background-repeat: center center; /* Evita repetições */
+`
+
+export const SectionCertifications = styled.section`
+    display: flex;
+    width: 1152px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 44px;
+    margin: auto;
+`
+
+export const ContainerCertifications = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 35px;
+    align-self: stretch;
+`
+
+export const Certification = styled.div`
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
 `

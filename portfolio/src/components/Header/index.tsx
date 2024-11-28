@@ -1,22 +1,26 @@
-import { Container, LeftSide, Menu, IconContainer } from "./styles"
+import { Container, LeftSide, Menu, IconContainer, HeaderTitle } from "./styles"
 import HeaderButton from "../HeaderButton/index";
-import IconHome from "../../assets/header-icons/home";
+import IconCertificate from "../../assets/header-icons/certificate-inline";
 import IconAbout from "../../assets/header-icons/about-circle-outline";
 import IconConstruct from "../../assets/header-icons/construct-outline";
 import IconChat from "../../assets/header-icons/chat-line";
+import {useNavigate} from "react-router-dom";
 
 
 function Header() {
+
+    const navigate = useNavigate();
+
     return (
         <Container>
             <LeftSide>
-                <h6>Alex de Jesus</h6>
+                <HeaderTitle onClick={() => navigate("/")}>Alex de Jesus</HeaderTitle>
             </LeftSide>
             <Menu>
-                <HeaderButton>Home{<IconContainer><IconHome /></IconContainer>}</HeaderButton>
-                <HeaderButton>Sobre{<IconContainer><IconAbout /></IconContainer>}</HeaderButton>
-                <HeaderButton>Projetos{<IconContainer><IconConstruct /></IconContainer>}</HeaderButton>
-                <HeaderButton>Fale comigo{<IconContainer><IconChat /></IconContainer>}</HeaderButton>
+                <HeaderButton href="#sobre">Sobre{<IconContainer><IconAbout /></IconContainer>}</HeaderButton>
+                <HeaderButton href="#projetos">Projetos{<IconContainer><IconConstruct /></IconContainer>}</HeaderButton>
+                <HeaderButton href="#certificações">Certificações{<IconContainer><IconCertificate /></IconContainer>}</HeaderButton>
+                <HeaderButton href="#fale_comigo">Fale comigo{<IconContainer><IconChat /></IconContainer>}</HeaderButton>
             </Menu>
         </Container>
     );

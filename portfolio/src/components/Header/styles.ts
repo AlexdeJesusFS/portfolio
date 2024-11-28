@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import HeaderButton from "../HeaderButton/index";
 
 
 export const Container = styled.header`
@@ -38,4 +39,9 @@ export const IconContainer = styled.span`
     justify-content: right; 
     margin-bottom: 4px; //ajusta o icone na melhor posição
     height: 100%;
+`
+
+export const HeaderTitle = styled(HeaderButton)`
+    font-size: 20px;
+    font-weight: 500;
 `

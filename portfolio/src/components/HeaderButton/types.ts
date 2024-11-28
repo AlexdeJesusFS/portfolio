@@ -1,7 +1,8 @@
 import React, { ReactNode } from "react";
 
 
-export interface IButtonProps {
+export interface IHeaderButtonProps {
     children: ReactNode;
     onClick?: React.MouseEventHandler<HTMLButtonElement>;
+    href?: string;
 }

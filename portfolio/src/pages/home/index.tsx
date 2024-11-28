@@ -6,6 +6,8 @@ import {
 import Card from "../../components/Card";
 import CardTag from "../../components/CardTag";
 import { htmlIcon, cssIcon, tsIcon, figmaIcon, reactIcon, pythonIcon, apiIcon, sqlserverIcon } from "../../assets/dev-icon-tags/"; import "../../assets/dev-icon-tags/";
+import LinkButton from "../../components/LinkButton";
+import certificateIcon from "../../assets/certificate.svg";
 
 
 function Home() {
@@ -18,13 +20,16 @@ function Home() {
         <h1>Alex de Jesus Full-Stack</h1>
       </ContainerImgElipses>
 
-      <SectionAbout>
+      <p id="sobre"></p>
+      <SectionAbout>        
         <h3>Sobre mim.</h3>
         <p>Sou um profissional com mais de 2 anos de experiência em desenvolvimento realizando integrações e automações em Python, focado em otimizar processos internos e resolver desafios técnicos. Entre os meus principais projetos, estão a criação de integrações entre o Movidesk e o WhatsApp via API, além de automações que atualizam estoque e status de pedidos em sistemas de ERP. Também tenho experiência em suporte técnico, atuando na resolução de problemas em sistemas de ERP, redes e equipamentos, e configurando ferramentas como Movidesk, Microsoft 365 e Portal Azure. Meu trabalho inclui o gerenciamento de chamados técnicos, o cumprimento de SLAs e a realização de treinamentos para capacitar os usuários. Estou familiarizado com metodologias ágeis, como Scrum e Kanban, e práticas do PMBOK para gerenciar projetos, já trabalhei em equipe cumprindo metas por meio do uso de OKRs e feedbacks contínuos. Sempre buscando melhorar o desempenho individual e da equipe.</p>
       </SectionAbout>
 
       <ContainerBlur>
         <SectionProjects>
+          <p id="projetos"></p>
+          <br />
           <h3>Projetos.</h3>
           <ContainerCards>
             <ColumnCards>{/*Left*/}
@@ -61,12 +66,46 @@ function Home() {
         </SectionProjects>
       </ContainerBlur>
 
+      <p id="certificações"></p>
+      <br />
       <SectionCertifications>
         <h3>Certificações.</h3>
           <ContainerCertifications>
             <Certification>
-              <h6>certificação.</h6>
-              <p>alguma coisa</p>
+              <LinkButton href="https://drive.google.com/file/d/1h3dRokO5raLRI1jmEF3ZjvJ6nKkqsOaq/view" label="Alura." 
+              icon={certificateIcon} />
+              <ul>
+                <li>Git e GitHub</li>
+                <li>Python</li>
+                <li>HTML5 e CSS3</li>
+                <li>JavaScript</li>
+                <li>Figma</li>
+                <li>Design System</li>
+              </ul>
+            </Certification>
+            <Certification>
+            <LinkButton href="https://hermes.dio.me/certificates/5QUZOAXG.pdf" label="Digital Innovation One." 
+            icon={certificateIcon} />
+              <p>Bootcamp XP Inc. - Full Stack Developer:<br />
+              Nesse bootcamp aprendi mais sobre C#, React, conceitos e metodolias de programação.</p>
+              <br />
+              <p>Conteúdo:</p>
+              <ul>
+                <li>Introdução ao Ambiente .NET e Projetos Colaborativos</li>
+                <li>Sintaxe Básica com .NET C#</li>
+                <li>Dados e Listas com .NET C#</li>
+                <li>Programação Orientada a Objetos com C#</li>
+                <li>Introdução a Banco de Dados</li>
+                <li>Construindo APIs com .NET C#</li>
+                <li>Trabalhando com Desenvolvimento Orientado a Testes</li>
+                <li>Introdução a Front End com React</li>
+                <li>Conceitos Básicos de React</li>
+                <li>Gerenciando Componentes React</li>
+                <li>Criando Front-end com Next e Typescript</li>
+                <li>Introdução a Cloud com Azure</li>
+              </ul>
+              <br />
+              <p>Tudo que aprendi ao longo da formação foi salvo em um <a className="pointer" href="https://github.com/AlexdeJesusFS/Bootcamp-XP-Inc.-Full-Stack-Developer">repositório GitHub</a> disponível em meu perfil. Acesse e veja mais sobre o que aprendi e os desafios que fiz.</p>
             </Certification>
           </ContainerCertifications>
           

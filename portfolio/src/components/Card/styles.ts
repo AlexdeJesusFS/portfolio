@@ -3,7 +3,9 @@ import styled from "styled-components"
 
 export const Container = styled.div`
     display: flex;
-    width: 564px;
+    //width: 564px;
+    flex: 1; /* Permite que o card cresça automaticamente */
+
     padding: 8px;
     flex-direction: column;
     align-items: flex-start;

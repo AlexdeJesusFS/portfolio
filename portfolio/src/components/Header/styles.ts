@@ -6,7 +6,7 @@ export const Container = styled.header`
     display: flex;
     width: 100%;
     height: 60px;
-    padding: 16px 96px;
+    padding: 16px 138px;
     justify-content: flex-end;
     align-items: flex-start;
     gap: 10px;
@@ -17,14 +17,14 @@ export const Container = styled.header`
     background: var(--Primary-water-green-50, #E6FAF7);
 `
 
-    export const LeftSide = styled.div`
-        display: flex;
-        height: 100%;
-        padding: 15px 0px;
-        align-items: center;
-        gap: 10px;
-        flex: 1 0 0;
-    `
+export const LeftSide = styled.div`
+    display: flex;
+    height: 100%;
+    padding: 15px 0px;
+    align-items: center;
+    gap: 10px;
+    flex: 1 0 0;
+`
 
 export const Menu = styled.div`
     display: flex;

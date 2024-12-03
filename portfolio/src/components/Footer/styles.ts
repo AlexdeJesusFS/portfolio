@@ -2,7 +2,7 @@ import styled from "styled-components";
 import cursorPointer from "../../assets/cursor/cursorPointer.svg";
 
 
-export const Container = styled.footer`
+export const FooterContainer = styled.footer`
     display: flex;
     width: 100%;
     height: 150px;
@@ -33,9 +33,11 @@ export const Container = styled.footer`
 
 export const RightSide = styled.div`
     display: flex;
+    height: 120px;
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
+    gap: 10px;
     flex: 1 0 0;
 `
 
@@ -85,10 +87,9 @@ export const ContactsContainer = styled.div`
 
 export const LeftSide = styled.div`
     display: flex;
-    width: 313px;
     align-items: center;
     gap: 4px;
-    flex-shrink: 0;
+    flex: 1 0 0;
     align-self: stretch;
 `
 
@@ -103,7 +104,7 @@ export const Center = styled.div`
 
 export const GifContainer = styled.div`
     display: flex;
-    width: 152px;
+    width: 100%;
     height: 147px;
     justify-content: center;
     align-items: center;

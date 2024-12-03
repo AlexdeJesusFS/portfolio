@@ -10,6 +10,7 @@ import "../../assets/dev-icon-tags/";
 import LinkButton from "../../components/LinkButton";
 import certificateIcon from "../../assets/certificate.svg";
 import Carousel from "../../components/Carousel";
+import Footer from "../../components/Footer";
 
 
 function Home() {
@@ -128,6 +129,8 @@ function Home() {
 
       </Container>
 
+      <p id="fale_comigo"></p>
+      <Footer />
     </>
   );
 };

@@ -104,6 +104,7 @@ export const SectionStacks = styled.section`
     align-items: flex-start;
     gap: 84px;
     margin-top: 84px;
+    margin-bottom: 154px;
 
     h4 {
         margin-left: 106px;

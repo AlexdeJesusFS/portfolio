@@ -17,11 +17,11 @@ export default createGlobalStyle`
         margin: 0;
         padding: 0;
         background-color: #121212;
-        cursor: url(${cursorDefault}) 12 12, auto;
+        cursor: url(${cursorDefault}), url(${cursorDefault}.cur), url(${cursorDefault}.png) 12 12, auto;
     }
 
     h1, h2, h3, h4, h5, h6, p, li {
-        cursor: url(${cursorText}) 12 12, text;
+        cursor: url(${cursorText}), url(${cursorText}.cur), url(${cursorText}.png) 12 12, text;
     }
 
     button, a {
@@ -72,6 +72,10 @@ export default createGlobalStyle`
         font-style: normal;
         font-weight: 450;
         line-height: 24px; /* 141.176% */
+    }
+
+    strong {
+        color: #BADEFB;
     }
 
     a {

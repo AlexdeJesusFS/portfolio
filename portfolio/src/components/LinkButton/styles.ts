@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import cursorPointer from "../../assets/cursor/cursorPointer.svg"
 
 
 export const Link = styled.a`
@@ -24,8 +23,6 @@ export const Link = styled.a`
     font-style: normal;
     font-weight: 500;
     line-height: 24px; /*120%*/
-
-    cursor: url(${cursorPointer}), url(${cursorPointer}.cur), url(${cursorPointer}.png) 12 12; /* Fallbacks */    
 
     &:visited {
         color: var(--Primary-water-green-400, #33D6BB);

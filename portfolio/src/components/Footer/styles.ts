@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import cursorPointer from "../../assets/cursor/cursorPointer.svg";
 
 
 export const FooterContainer = styled.footer`
@@ -27,7 +26,6 @@ export const FooterContainer = styled.footer`
         width: 152px;
         height: 147px;
         flex-shrink: 0;
-        cursor: url(${cursorPointer}), pointer;
     }
 `
 
@@ -51,7 +49,6 @@ export const ContactsContainer = styled.div`
     .email {
         color: var(--Primary-water-green-900, #005647);
         transition: color 0.4s ease;
-        cursor: url(${cursorPointer}), pointer;
         &:hover {
             color: #E13C30;
         }
@@ -60,7 +57,6 @@ export const ContactsContainer = styled.div`
     .github {
         color: var(--Primary-water-green-900, #005647);
         transition: color 0.4s ease;
-        cursor: url(${cursorPointer}), pointer;
         &:hover {
             color: #171515;
         }
@@ -69,7 +65,6 @@ export const ContactsContainer = styled.div`
     .linkedin {
         color: var(--Primary-water-green-900, #005647);
         transition: color 0.4s ease;
-        cursor: url(${cursorPointer}), pointer;
         &:hover {
             color: #0E76A8;
         }
@@ -78,7 +73,6 @@ export const ContactsContainer = styled.div`
     .whatsapp {
         color: var(--Primary-water-green-900, #005647);
         transition: color 0.4s ease;
-        cursor: url(${cursorPointer}), pointer;
         &:hover {
             color: #25D366;
         }
@@ -108,7 +102,6 @@ export const GifContainer = styled.div`
     height: 147px;
     justify-content: center;
     align-items: center;
-    cursor: url(${cursorPointer}), pointer;
 `
 
 //export const Gif = styled.

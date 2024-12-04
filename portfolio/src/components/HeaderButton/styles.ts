@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import cursorPointer from "../../assets/cursor/cursorPointer.svg";
 
 
 export const Button = styled.button`
@@ -12,8 +11,6 @@ export const Button = styled.button`
     border-radius: 8px;
     background: none;
     border: none;
-    cursor: url(${cursorPointer}) 12 12, pointer; /* Cursor pointer */
-
 
     /* text */
     color: var(--Primary-water-green-900, #005647);

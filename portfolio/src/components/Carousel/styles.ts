@@ -4,21 +4,19 @@ import cursorPointer from "../../assets/cursor/cursorPointer.svg";
 export const Container = styled.div`
     li {
         list-style: none;
+        &:hover {
+            cursor: url(${cursorPointer}) 12 12, pointer;//sobrepõe a definição padrão de cursor text para cursor pointer
+        }
     }
 
     width: 98.7vw;//largura correta para evitar scroll horizontal
     overflow: hidden;
-
 `;
 
 export const DevIcons = styled.div`
     max-width: 100%; 
     margin: 0 auto;
     overflow: hidden;
-
-    &:hover {
-        cursor: url(${cursorPointer}) 12 12;
-    }
 
     ul {
         display: flex;

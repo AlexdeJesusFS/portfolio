@@ -1,10 +1,9 @@
 import styled from "styled-components";
-import imageBlur from "../../assets/FrameBlur.png";
 
 
 export const Container = styled.div`
-    width: 1142px;
-
+    width: 100%;
+    padding: 0px 144px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,6 +11,9 @@ export const Container = styled.div`
     margin: auto;
     gap: 44px;
 
+    .ellipses-background {
+        top: 1380px;
+    }
 `
 
 export const ContainerImgElipses = styled.div`
@@ -37,7 +39,7 @@ export const SectionAbout = styled.section`
 
 export const SectionProjects = styled.section`
     display: flex;
-    width: 1142px;
+    width: 100%;
     flex-direction: column;
     align-items: flex-start;
     margin: 252px auto;
@@ -59,17 +61,6 @@ export const ColumnCards = styled.div`
     justify-content: flex-start;
     align-items: flex-start;
     gap: 24px;
-`
-
-export const ContainerBlur = styled.div`
-    display: flex;
-    width: 98.8vw;//com essa unidade mesmo dentro do Container ocupará toda a tela.
-    height: 1400px;
-    background-position: 0% 20%;
-
-    background-image: url(${imageBlur});
-    background-size: cover;
-    background-repeat: center center; /* Evita repetições */
 `
 
 export const SectionCertifications = styled.section`
@@ -107,6 +98,6 @@ export const SectionStacks = styled.section`
     margin-bottom: 154px;
 
     h4 {
-        margin-left: 106px;
+        margin-left: 142px;
     }
 `

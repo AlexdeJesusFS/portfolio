@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     display: flex;
-    width: 100%;
+    width: 89.3%;//impede scroll horizontal
     justify-content: center;
     align-items: center;
     gap: -424px;

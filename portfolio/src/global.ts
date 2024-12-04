@@ -25,7 +25,7 @@ export default createGlobalStyle`
     }
 
     button, a {
-        cursor: url(${cursorPointer}), url(${cursorPointer}.cur), url(${cursorPointer}.png) 12 12; /* Fallbacks */
+        cursor: url(${cursorPointer}), url(${cursorPointer}.cur), url(${cursorPointer}.png) 12 12, pointer; /* Fallbacks */
     }
 
     h1 {

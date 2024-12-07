@@ -16,7 +16,7 @@ export const Container = styled.div`
     }
 `
 
-export const ContainerImgElipses = styled.div`
+export const ContainerEllipses = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center; /* Alinha verticalmente */

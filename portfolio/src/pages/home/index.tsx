@@ -1,7 +1,6 @@
 import Header from "../../components/Header";
-import imgElipses from "../../assets/Elipses.png";
 import { 
-  ContainerImgElipses, SectionAbout, SectionProjects, ContainerCards, ColumnCards, SectionCertifications, ContainerCertifications, Certification, SectionStacks, Container
+  ContainerEllipses, SectionAbout, SectionProjects, ContainerCards, ColumnCards, SectionCertifications, ContainerCertifications, Certification, SectionStacks, Container
 } from "./styles";
 import Card from "../../components/Card";
 import CardTag from "../../components/CardTag";
@@ -12,19 +11,25 @@ import certificateIcon from "../../assets/certificate.svg";
 import Carousel from "../../components/Carousel";
 import Footer from "../../components/Footer";
 import EllipesesBackground from "../../components/EllipsesBackground";
+import TypeWrite from "../../components/TypeWriter";
+import EllipsesAnimation from "../../components/EllipsesAnimation";
 
 
 function Home() {
+  const listPhrases = ["Front-end", "Back-end", "Full-Stack"]
+
   return (
     <>
       <Header />
 
-      <ContainerImgElipses>{/*TODO: criar animação com movimento das elipses*/}
-        <img src={imgElipses} alt="Elipses com foto de AlexdeJesusFS, e outras com tecnologia sobre cloud, computador com programação, front-end javascript e tecnologia sobre datacenter e banco de dados." />
-        <h1>Alex de Jesus Full-Stack</h1>{/*TODO: criar autotyping animation aqui */}
-      </ContainerImgElipses>
-
       <Container>
+
+        <ContainerEllipses>
+          <EllipsesAnimation />
+          <TypeWrite phrases={listPhrases} typeSpeed={100} backSpeed={50} 
+          loop={false} backDelay={1000} startDelay={4500}/>
+        </ContainerEllipses>
+
         <p id="sobre"></p>
         <br />
         <SectionAbout>        

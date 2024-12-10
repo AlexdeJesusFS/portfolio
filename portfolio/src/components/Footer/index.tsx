@@ -19,9 +19,7 @@ function Footer() {
                 </LeftSide>
                 <Center>
                     <GifContainer>
-                        <a href="https://pixabay.com/pt/gifs/internet-computador-escrit%C3%B3rio-3443">
-                            <img className="gif-computer" src={computerGif} alt="GIF de um computador antigo com monitor de tubo e com os números de 1 à 5 aparecendo na tela um por vez."/>
-                        </a>
+                        <img className="gif-computer" src={computerGif} alt="GIF de um computador antigo com monitor de tubo e com os números de 1 à 5 aparecendo na tela um por vez."/>
                     </GifContainer>
                 </Center>
                 <RightSide>

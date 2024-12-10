@@ -1,18 +1,17 @@
 import Header from "../../components/Header";
 import { 
-  ContainerEllipses, SectionAbout, SectionProjects, ContainerCards, ColumnCards, SectionCertifications, ContainerCertifications, Certification, SectionStacks, Container
+  AnimationsContainer, SectionAbout, SectionProjects, ContainerCards, ColumnCards, SectionStacks, Container
 } from "./styles";
 import Card from "../../components/Card";
 import CardTag from "../../components/CardTag";
 import { htmlIcon, cssIcon, tsIcon, figmaIcon, reactIcon, pythonIcon, apiIcon, sqlserverIcon } from "../../assets/dev-icon-tags/index"; 
 import "../../assets/dev-icon-tags/";
-import LinkButton from "../../components/LinkButton";
-import certificateIcon from "../../assets/certificate.svg";
 import Carousel from "../../components/Carousel";
 import Footer from "../../components/Footer";
 import EllipesesBackground from "../../components/EllipsesBackground";
 import TypeWrite from "../../components/TypeWriter";
 import EllipsesAnimation from "../../components/EllipsesAnimation";
+import DownloadCVButton from "../../components/DownloadButton"
 
 
 function Home() {
@@ -24,23 +23,24 @@ function Home() {
 
       <Container>
 
-        <ContainerEllipses>
+        <AnimationsContainer>
           <EllipsesAnimation />
-          <TypeWrite phrases={listPhrases} typeSpeed={100} backSpeed={50} 
+          <TypeWrite prefix="Desenvolvedor" phrases={listPhrases} typeSpeed={100} backSpeed={50} 
           loop={false} backDelay={1000} startDelay={4500}/>
-        </ContainerEllipses>
+        </AnimationsContainer>
 
         <p id="sobre"></p>
         <br />
         <SectionAbout>        
           <h3>Sobre mim.</h3>
-          <p>Sou um profissional com <strong>mais de 2 anos de experiência</strong> em desenvolvimento 
-            realizando <strong>integrações</strong> e <strong>automações</strong> em Python, focado em otimizar processos 
+          <p>Sou um profissional com <strong>mais de 2 anos de experiência em desenvolvimento </strong>
+            realizando <strong>integrações</strong> e <strong>automações</strong> em <strong>Python</strong>, focado em otimizar processos 
             internos e resolver desafios técnicos. Meu trabalho inclui o gerenciamento de 
             chamados técnicos e o cumprimento de SLAs. Estou familiarizado com <strong>metodologias 
-            ágeis</strong>, como <strong>Scrum</strong> e <strong>Kanban</strong>, e práticas do <strong>PMBOK</strong> para gerenciar projetos, já 
+            ágeis</strong>, como <strong>Scrum</strong> e <strong>Kanban</strong>, e práticas do <strong>PMBOK para gerenciar projetos</strong>, já 
             trabalhei em equipe cumprindo metas por meio do uso de OKRs e feedbacks 
             contínuos. Sempre buscando melhorar o desempenho individual e da equipe.</p>
+          <DownloadCVButton />
         </SectionAbout>
         
         <SectionProjects>
@@ -50,11 +50,11 @@ function Home() {
           <h3>Projetos.</h3>
           <ContainerCards>
             <ColumnCards>{/*Left*/}
-              <Card title="ELGScreen." text="Automação para atualizar o estoque do ERP, onde arquivos XMLs eram capturados via API, corrigindo erros no arquivo e por fim os enviado para o servidor do ERP. Projeto feito usando Python.">
+              <Card title="ELGScreen." text="Automação para atualizar o estoque do ERP, onde arquivos XML eram capturados via API, os erros nos arquivos eram corrigidos e, por fim, os dados eram enviados para o servidor do ERP. Projeto desenvolvido utilizando Python.">
                 <CardTag text="API"><img src={apiIcon} alt="API ícone" /></CardTag>
                 <CardTag text="Python"><img src={pythonIcon} alt="Python ícone" /></CardTag>
               </Card>
-              <Card title="ELGScreen." text="Automação para atualizar os status dos pedidos entregues no mercado livre, para faturamento. Usando API dos correios para verificar status de entrega dos pedidos e API do mercado livre para atualizar status.">
+              <Card title="ELGScreen." text="Automação desenvolvida em Python para atualizar o status dos pedidos entregues no Mercado Livre, agilizando o processo de liberação de faturamento da empresa. A solução utiliza a API dos Correios para verificar o status de entrega dos pedidos e a API do Mercado Livre para atualizar os respectivos status.">
                 <CardTag text="API"><img src={apiIcon} alt="API ícone" /></CardTag>
                 <CardTag text="Python"><img src={pythonIcon} alt="Python ícone" /></CardTag>
               </Card>
@@ -67,11 +67,11 @@ function Home() {
               </Card>
             </ColumnCards>
             <ColumnCards>{/*Right*/}
-              <Card title="G2." text="Integração entre o service desk Movidesk e WhatsApp para envio de mensagens aos clientes, utilizando python. Onde os clientes eram atualizados sobre o status de seus tickets quando alterados, para isso foi criado uma API usando FastAPI para receber os webhooks do Movidesk e enviar a mensagem.">
+              <Card title="G2." text="Desenvolvimento de uma integração entre o Service Desk Movidesk e o WhatsApp para envio de mensagens aos clientes, utilizando Python e a API do 360Dialog para a comunicação com o WhatsApp. A solução atualizava os clientes sobre seus tickets sempre que uma alteração de status era realizada. Para isso, foi criada uma API com FastAPI para receber os webhooks do Movidesk e enviar as mensagens automaticamente.">
                 <CardTag text="API"><img src={apiIcon} alt="API ícone" /></CardTag>
                 <CardTag text="Python"><img src={pythonIcon} alt="Python ícone" /></CardTag>
               </Card>
-              <Card title="ELGScreen." text="Lista de produtos mais vendidos no mercado livre que a empresa não vende. Utilizando a API do mercado livre para pegar uma lista dos produtos mais vendidos, em uma determinada categoria e consultando o banco SQL Server da empresa para pegar a lista de produtos vendidos nessa mesma categoria, usando expressões regulares e um framework para verificar uma correspondência acima de 70% para os títulos foi listados produtos mais vendidos do mercado livre que a empresa não estava vendendo. A lista era exibida na intranet da empresa em uma tabela.">
+              <Card title="ELGScreen." text="Desenvolvimento de uma ferramenta para listar os produtos mais vendidos no Mercado Livre que a empresa não comercializa. Utilizando a API do Mercado Livre, foi gerada uma lista dos produtos mais vendidos em uma determinada categoria. Em seguida, foi realizada uma consulta ao banco de dados SQL Server da empresa para obter a lista de produtos vendidos na mesma categoria. Com o uso de expressões regulares e um framework de correspondência de texto, foi possível identificar correspondências superiores a 70% nos títulos. Os produtos mais vendidos do Mercado Livre que não estavam no portfólio da empresa foram exibidos em uma tabela na intranet, com imagens e links. A solução foi implementada com HTML, CSS e Python Django.">
                 <CardTag text="API"><img src={apiIcon} alt="API ícone" /></CardTag>
                 <CardTag text="Python"><img src={pythonIcon} alt="Python ícone" /></CardTag>
                 <CardTag text="SQL Server"><img src={sqlserverIcon} alt="SQL Server ícone" /></CardTag>
@@ -82,52 +82,8 @@ function Home() {
           </ContainerCards>
         </SectionProjects>
 
-        <SectionCertifications>
-        <p id="certificações"></p>
-        <br />
-          <h3>Certificações.</h3>
-            <ContainerCertifications>
-              <Certification>
-                <LinkButton href="https://drive.google.com/file/d/1h3dRokO5raLRI1jmEF3ZjvJ6nKkqsOaq/view" label="Alura." 
-                icon={certificateIcon} />
-                <ul>
-                  <li>Git e GitHub</li>
-                  <li>Python</li>
-                  <li>HTML5 e CSS3</li>
-                  <li>JavaScript</li>
-                  <li>Figma</li>
-                  <li>Design System</li>
-                </ul>
-              </Certification>
-              <Certification>
-              <LinkButton href="https://hermes.dio.me/certificates/5QUZOAXG.pdf" label="Digital Innovation One." 
-              icon={certificateIcon} />
-                <p>Bootcamp XP Inc. - Full Stack Developer:<br />
-                Nesse bootcamp aprendi mais sobre C#, React, conceitos e metodolias de programação.</p>
-                <br />
-                <p>Conteúdo:</p>
-                <ul>
-                  <li>Introdução ao Ambiente .NET e Projetos Colaborativos</li>
-                  <li>Sintaxe Básica com .NET C#</li>
-                  <li>Dados e Listas com .NET C#</li>
-                  <li>Programação Orientada a Objetos com C#</li>
-                  <li>Introdução a Banco de Dados</li>
-                  <li>Construindo APIs com .NET C#</li>
-                  <li>Trabalhando com Desenvolvimento Orientado a Testes</li>
-                  <li>Introdução a Front End com React</li>
-                  <li>Conceitos Básicos de React</li>
-                  <li>Gerenciando Componentes React</li>
-                  <li>Criando Front-end com Next e Typescript</li>
-                  <li>Introdução a Cloud com Azure</li>
-                </ul>
-                <br />
-                <p>Tudo que aprendi ao longo da formação foi salvo em um <a href="https://github.com/AlexdeJesusFS/Bootcamp-XP-Inc.-Full-Stack-Developer">repositório GitHub</a> disponível em meu perfil. Acesse e veja mais sobre o que aprendi e os desafios que fiz.</p>
-              </Certification>
-            </ContainerCertifications>
-        </SectionCertifications>
-
         <SectionStacks>
-          <h4>Stacks & Tecnologias.</h4>
+          <h4>Tecnologias.</h4>
           <Carousel />
         </SectionStacks>
 

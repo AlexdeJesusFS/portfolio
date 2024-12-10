@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div`
     display: flex;  
     align-items: center;
-    gap: 16px;
+    gap: 28px;
 `;
 
 export const TypedContainer = styled.div`

@@ -2,10 +2,10 @@ import { ReactTyped } from "react-typed";
 import { ITypewriterProps } from "./types";
 import { Container, TypedContainer } from "./styles";
 
-function TypeWrite({ phrases, typeSpeed, backSpeed, loop, backDelay, startDelay }: ITypewriterProps) {
+function TypeWrite({ prefix, phrases, typeSpeed, backSpeed, loop, backDelay, startDelay }: ITypewriterProps) {
     return (
         <Container>
-            <h1>Development</h1>
+            <h1>{prefix}</h1>
             <h1>
                 <TypedContainer>
                     <ReactTyped

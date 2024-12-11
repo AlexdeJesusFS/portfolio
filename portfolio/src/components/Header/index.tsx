@@ -1,5 +1,5 @@
 import { Container, LeftSide, Menu, IconContainer, HeaderTitle } from "./styles"
-import HeaderButton from "../HeaderButton/index";
+import HeaderButton from "./Button/index";
 import clickButtonSound from "../../assets/sounds/buttonClicking.wav"
 
 import { AboutIcon, ChatIcon, ConstructIcon } from './icons';

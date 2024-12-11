@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import HeaderButton from "../HeaderButton/index";
+import HeaderButton from "./Button/index";
 
 
 export const Container = styled.header`

@@ -86,22 +86,3 @@ export const LeftSide = styled.div`
     flex: 1 0 0;
     align-self: stretch;
 `
-
-export const Center = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    flex: 1 0 0;
-`
-
-export const GifContainer = styled.div`
-    display: flex;
-    width: 100%;
-    height: 147px;
-    justify-content: center;
-    align-items: center;
-`
-
-//export const Gif = styled.

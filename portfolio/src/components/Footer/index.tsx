@@ -1,4 +1,4 @@
-import { FooterContainer, LeftSide, Center, RightSide, GifContainer, ContactsContainer } from "./styles";
+import { FooterContainer, LeftSide, RightSide, ContactsContainer } from "./styles";
 import computerGif from "../../assets/computer.gif";
 import copyright from "../../assets/copyright.svg"
 import { GithubIcon, EmailIcon, LinkedinIcon, WhatsappIcon } from './icons';
@@ -17,11 +17,7 @@ function Footer() {
                     <img src={copyright} alt="simbolo do copyright" />
                     <p className="copyright">{currentYear} Alex de Jesus. All rights reserved.</p>
                 </LeftSide>
-                <Center>
-                    <GifContainer>
-                        <img className="gif-computer" src={computerGif} alt="GIF de um computador antigo com monitor de tubo e com os números de 1 à 5 aparecendo na tela um por vez."/>
-                    </GifContainer>
-                </Center>
+                    <img className="gif-computer" src={computerGif} alt="GIF de um computador antigo com monitor de tubo e com os números de 1 à 5 aparecendo na tela um por vez."/>
                 <RightSide>
                     <h6>Fale comigo e compartilhe!</h6>
                     <ContactsContainer>

@@ -6,10 +6,10 @@ export const Container = styled.div`
     //width: 564px;
     flex: 1; /* Permite que o card cresça automaticamente */
 
-    padding: 8px;
+    padding: 0.8rem;
     flex-direction: column;
     align-items: flex-start;
-    gap: 12px;
+    gap: 1.2rem;
 
     border-radius: 8px;
     border: 1.5px solid var(--Neutral-gray-50, #F8F9F9);
@@ -31,10 +31,10 @@ export const Container = styled.div`
 
 export const TagContainer = styled.div`
     display: flex;
-    padding: 8px 0px;
+    padding: 0.8rem 0rem;
     align-items: center;
     align-content: center;
-    gap: 10px;
+    gap: 1rem;
     align-self: stretch;
     flex-wrap: wrap;
 `

@@ -4,8 +4,8 @@ import styled from "styled-components";
 export const FooterContainer = styled.footer`
     display: flex;
     width: 100%;
-    height: 150px;
-    padding: 0px 144px;
+    height: 15rem;
+    padding: 0rem 14.4rem;
     justify-content: center;
     align-items: center;
     flex-shrink: 0;
@@ -16,10 +16,10 @@ export const FooterContainer = styled.footer`
         color: var(--Primary-water-green-900, #005647);
         /* Caption */
         font-family: "Fira Code";
-        font-size: 12px;
+        font-size: 1.2rem;
         font-style: normal;
         font-weight: 400;
-        line-height: 24px; /* 200% */
+        line-height: 2.4rem; /* 200% */
     }
 
     .gif-computer {
@@ -31,20 +31,20 @@ export const FooterContainer = styled.footer`
 
 export const RightSide = styled.div`
     display: flex;
-    height: 120px;
+    height: 12rem;
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
-    gap: 10px;
+    gap: 1rem;
     flex: 1 0 0;
 `
 
 export const ContactsContainer = styled.div`
     display: flex;
-    height: 84px;
+    height: 8.4rem;
     justify-content: center;
     align-items: center;
-    gap: 26px;
+    gap: 2.6rem;
 
     .email {
         color: var(--Primary-water-green-900, #005647);
@@ -82,7 +82,7 @@ export const ContactsContainer = styled.div`
 export const LeftSide = styled.div`
     display: flex;
     align-items: center;
-    gap: 4px;
+    gap: 0.4rem;
     flex: 1 0 0;
     align-self: stretch;
 `

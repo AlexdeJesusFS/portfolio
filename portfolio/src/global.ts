@@ -7,6 +7,7 @@ import cursorText from "./assets/cursor/cursorText.svg";
 export default createGlobalStyle`
 
     * {
+        font-size: 62.5%; // 10px
         margin: 0;
         padding: 0;
         box-sizing: border-box;
@@ -31,61 +32,61 @@ export default createGlobalStyle`
     h1 {
         color: var(--Primary-water-green-600, #00BA9B);
         font-family: "Source Code Pro";
-        font-size: 51px;
+        font-size: 5.1rem;
         font-style: normal;
         font-weight: 600;
-        line-height: 48px; /* 94.118% */
+        line-height: 4.8rem; /* 94.118% */
     }
 
     h3 {
         color: var(--Secondary-cyan-blue-400, #33B6D6);
         font-family: "Source Code Pro";
-        font-size: 35px;
+        font-size: 3.5rem;
         font-style: normal;
         font-weight: 600;
-        line-height: 36px; /* 102.857% */
+        line-height: 3.6rem; /* 102.857% */
     }
 
     h4 {
         color: var(--Secondary-cyan-blue-400, #33B6D6);
         font-family: "Source Code Pro";
-        font-size: 29px;
+        font-size: 2.9rem;
         font-style: normal;
         font-weight: 500;
-        line-height: 36px; /* 124.138% */
+        line-height: 3.6rem; /* 124.138% */
     }
 
     h6 {
         color: var(--Primary-water-green-900, #005647);
         font-family: "Source Code Pro";
-        font-size: 20px;
+        font-size: 2rem;
         font-style: normal;
         font-weight: 500;
-        line-height: 24px; /* 120% */
+        line-height: 2.4rem; /* 120% */
     }
 
     p {
         color: var(--Neutral-gray-50, #F8F9F9);
         text-align: justify;
         font-family: "Fira Code";
-        font-size: 17px;
+        font-size: 1.7rem;
         font-style: normal;
         font-weight: 450;
-        line-height: 24px; /* 141.176% */
+        line-height: 2.4rem; /* 141.176% */
     }
 
     strong {
         color: #BADEFB;
+        font-size: 1.7rem;
     }
 
     a {
         color: var(--Feedback-Info-blue-300, #6AB9F7);
-        padding: 2px 2px
+        padding: 0.2rem 0.2rem
     }
 
     a:visited {
         color: var(--Feedback-Danger-orange-300, #F88178);
-        ;
     }
 
     ul {
@@ -95,9 +96,9 @@ export default createGlobalStyle`
         //text
         text-align: justify;
         font-family: "Fira Code";
-        font-size: 17px;
+        font-size: 1.7rem;
         font-style: normal;
         font-weight: 450;
-        line-height: 24px; /* 141.176% */
+        line-height: 2.4rem; /* 141.176% */
     }
 `

@@ -13,19 +13,18 @@ export const Container = styled.div`
 `
 
 export const EllipseBase = styled.div`
-    width: 600px;
-    height: 600px;
-    flex-shrink: 0;
+    flex: 1 0 0;
+    align-self: stretch;
+
+    //style
+    border-radius: 840px;
+    filter: blur(250px);
 `
 
 export const Ellipse1 = styled(EllipseBase)`
-    border-radius: 600px;
     background: linear-gradient(180deg, #8A2BE2 0%, #FF4C4C 100%);
-    filter: blur(250px);
 `
 
 export const Ellipse2 = styled(EllipseBase)`
-    border-radius: 600px;
     background: linear-gradient(180deg, #2ECC71 0%, #5D5FEF 100%);
-    filter: blur(250px);
 `

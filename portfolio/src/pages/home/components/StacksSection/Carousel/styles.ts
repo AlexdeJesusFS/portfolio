@@ -21,7 +21,7 @@ export const DevIcons = styled.div`
     ul {
         display: flex;
         align-items: center;
-        gap: 40px;
+        gap: 4rem;
 
         /* Criar o efeito contínuo */
         animation: slide 14s infinite linear;

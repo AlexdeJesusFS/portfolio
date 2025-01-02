@@ -3,11 +3,19 @@ import styled from "styled-components";
 
 export const Section = styled.section`
     display: flex;
-    width: 100%;
     flex-direction: column;
     align-items: flex-start;
-    margin: 252px auto;
-    gap: 44px;
+    gap: 4.4rem;
+    position: relative;
+
+    .ellipses-background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1; //mantém o background atrás do conteúdo
+    }
 `
 
 export const ContainerCards = styled.div`

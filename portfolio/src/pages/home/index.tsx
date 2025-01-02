@@ -1,5 +1,5 @@
 import Header from "../../components/Header";
-import { AnimationsContainer, Container } from "./styles";
+import { AnimationsContainer, MainContainer } from "./styles";
 import EllipsesAnimation from "./components/EllipsesAnimation";
 import TypeWrite from "./components/TypeWriter";
 import AboutSection from "./components/AboutSection";
@@ -16,7 +16,7 @@ function Home() {
     <>
       <Header />
 
-      <Container>
+      <MainContainer>
 
         <AnimationsContainer>
           <EllipsesAnimation />
@@ -30,7 +30,7 @@ function Home() {
         
         <StacksSection />
 
-      </Container>
+      </MainContainer>
 
       <p id="fale_comigo"></p>
       <Footer />
@@ -38,4 +38,4 @@ function Home() {
   );
 };
 
-export { Home };
+export default Home;

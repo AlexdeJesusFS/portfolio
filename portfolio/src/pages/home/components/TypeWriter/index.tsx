@@ -15,10 +15,10 @@ function TypeWrite({ prefix, phrases, typeSpeed, backSpeed, loop, backDelay, sta
                         loop={loop}  // Loop infinito ou não
                         backDelay={backDelay}  // Tempo antes de apagar
                         startDelay={startDelay}
+                        className="typed"
                     />
                 </TypedContainer>
-            </h1>
-            
+            </h1> 
         </Container>
     );
 };

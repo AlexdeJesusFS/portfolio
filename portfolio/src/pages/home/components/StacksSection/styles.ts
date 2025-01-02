@@ -6,11 +6,9 @@ export const Section = styled.section`
     width: 98.7vw;//largura correta para evitar scroll horizontal
     flex-direction: column;
     align-items: flex-start;
-    gap: 84px;
-    margin-top: 84px;
-    margin-bottom: 154px;
-
+    gap: 8.4rem;
+    
     h4 {
-        margin-left: 142px;
+        margin-left: 14.2rem;
     }
 `

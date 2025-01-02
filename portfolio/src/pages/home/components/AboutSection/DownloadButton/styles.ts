@@ -3,12 +3,12 @@ import styled from "styled-components";
 
 export const Button = styled.button`
     display: flex;
-    height: 54px;
+    height: 5.4rem;
     justify-content: center;
     align-items: center;
 
-    padding: 0px 12px;
-    gap: 6px;
+    padding: 0rem 1.2rem;
+    gap: 0.6rem;
 
     border-radius: 8px;
     border: 2px solid var(--Primary-water-green-900, #005647);
@@ -17,10 +17,10 @@ export const Button = styled.button`
     //text
     color: var(--Neutral-gray-1000, #1D1F20);
     font-family: "Fira Code";
-    font-size: 16px;
+    font-size: 1.6rem;
     font-style: normal;
     font-weight: 700;
-    line-height: 24px; /* 150% */
+    line-height: 2.4rem; /* 150% */
     
     &:hover {
         //box-shadow: 4px 4px 0 var(--Primary-water-green-900, #005647);

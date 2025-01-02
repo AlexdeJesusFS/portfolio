@@ -1,26 +1,19 @@
 import styled from "styled-components";
 
 
-export const Container = styled.div`
-    width: 100%;
-    padding: 0px 144px;
+export const MainContainer = styled.main`
     display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 12.8rem 14.4rem;
     flex-direction: column;
-    margin: auto;
-    gap: 44px;
-
-    .ellipses-background {
-        top: 1550px;
-    }
+    align-items: center;
+    gap: 20.6rem;
+    align-self: stretch;
 `
 
 export const AnimationsContainer = styled.div`
     display: flex;
+    width: 70.4rem;
     flex-direction: column;
-    align-items: center; /* Alinha verticalmente */
-    justify-content: center; /* Alinha horizontalmente */
-    height: 532px;
-    gap: 62px;
+    align-items: center;
+    gap: 4.2rem;
 `

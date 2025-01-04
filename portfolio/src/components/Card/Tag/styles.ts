@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import theme from "../../../theme/theme";
 
 
 export const Tag = styled.div`
@@ -9,7 +10,7 @@ export const Tag = styled.div`
     gap: 0.4rem;
 
     border-radius: 12px;
-    background: var(--Primary-water-green-600, #00BA9B);
+    background: ${theme.colors.Primary["water green-600"]};
 
     /* text */
     font-family: "Fira Code";

@@ -12,11 +12,11 @@ export const Container = styled.div`
     gap: 1.2rem;
 
     border-radius: 8px;
-    border: 1.5px solid var(--Neutral-gray-50, #F8F9F9);
-    background: var(--Neutral-gray-1000, #1D1F20);
+    border: 1.5px solid ${({ theme }) => theme.colors.Neutral["gray-50"]};
+    background: ${({ theme }) => theme.colors.Neutral["gray-1000"]};
 
     /* Card Shadows/Heavy Shadow */
-    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.40);
+    box-shadow: ${({ theme }) => theme.shadows.cards.initial};
     /* Transição mais suave */
     transition: box-shadow 0.4s ease-in-out, transform 0.4s ease-in-out;
     z-index: 1;
@@ -24,7 +24,7 @@ export const Container = styled.div`
     &:hover {
         border: 1.5px solid var(--Neutral-gray-0, #FFF);
         /* Transição suave de sombra */
-        box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.40), 5px 15px 30px 5px rgba(0, 0, 0, 0.60);
+        box-shadow: ${({ theme }) => theme.shadows.cards.initial}, ${({ theme }) => theme.shadows.cards.final};
         transform: translateY(-2px); /* Elevação sutil */
     }
 `
@@ -40,5 +40,5 @@ export const TagContainer = styled.div`
 `
 
 export const Title = styled.h6`
-    color: var(--Primary-water-green-400, #33D6BB);
+    color: ${({ theme }) => theme.colors.Primary["water green-400"]};
 `

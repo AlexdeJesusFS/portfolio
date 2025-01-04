@@ -2,6 +2,7 @@ import { createGlobalStyle } from "styled-components";
 import cursorDefault from "./assets/cursor/cursorDefault.svg";
 import cursorPointer from "./assets/cursor/cursorPointer.svg";
 import cursorText from "./assets/cursor/cursorText.svg";
+//import {color, space, layout, ColorProps, SpaceProps, LayoutProps } from "styled-system";
 
 
 export default createGlobalStyle`
@@ -17,7 +18,7 @@ export default createGlobalStyle`
     body {
         margin: 0;
         padding: 0;
-        background-color: #121212;
+        background-color: ${({theme}) => theme.colors.background};
         cursor: url(${cursorDefault}), url(${cursorDefault}.cur), url(${cursorDefault}.png) 12 12, auto;
     }
 
@@ -30,7 +31,7 @@ export default createGlobalStyle`
     }
 
     h1 {
-        color: var(--Primary-water-green-600, #00BA9B);
+        color: ${({ theme }) => theme.colors.Primary["water green-600"]};
         font-family: "Source Code Pro";
         font-size: 5.1rem;
         font-style: normal;
@@ -39,7 +40,7 @@ export default createGlobalStyle`
     }
 
     h3 {
-        color: var(--Secondary-cyan-blue-400, #33B6D6);
+        color: ${({ theme }) => theme.colors.Secondary["cyan blue-400"]};
         font-family: "Source Code Pro";
         font-size: 3.5rem;
         font-style: normal;
@@ -48,7 +49,7 @@ export default createGlobalStyle`
     }
 
     h4 {
-        color: var(--Secondary-cyan-blue-400, #33B6D6);
+        color: ${({ theme }) => theme.colors.Secondary["cyan blue-400"]};
         font-family: "Source Code Pro";
         font-size: 2.9rem;
         font-style: normal;
@@ -57,7 +58,7 @@ export default createGlobalStyle`
     }
 
     h6 {
-        color: var(--Primary-water-green-900, #005647);
+        color: ${({ theme }) => theme.colors.Primary["water green-900"]};
         font-family: "Source Code Pro";
         font-size: 2rem;
         font-style: normal;
@@ -66,7 +67,7 @@ export default createGlobalStyle`
     }
 
     p {
-        color: var(--Neutral-gray-50, #F8F9F9);
+        color: ${({ theme }) => theme.colors.Neutral["gray-50"]};
         text-align: justify;
         font-family: "Fira Code";
         font-size: 1.7rem;
@@ -76,21 +77,21 @@ export default createGlobalStyle`
     }
 
     strong {
-        color: #BADEFB;
+        color: ${({ theme }) => theme.colors.Feedback.Info["blue-100"]};
         font-size: 1.7rem;
     }
 
     a {
-        color: var(--Feedback-Info-blue-300, #6AB9F7);
+        color: ${({ theme }) => theme.colors.Feedback.Info["blue-300"]};
         padding: 0.2rem 0.2rem
     }
 
     a:visited {
-        color: var(--Feedback-Danger-orange-300, #F88178);
+        color: ${({ theme }) => theme.colors.Feedback.Danger["orange-300"]};
     }
 
     ul {
-        color: var(--Neutral-gray-50, #F8F9F9);
+        color: ${({ theme }) => theme.colors.Neutral["gray-50"]};
         list-style: inside;
 
         //text

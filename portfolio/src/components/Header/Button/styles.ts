@@ -14,7 +14,7 @@ export const Button = styled.button`
     white-space: nowrap;
 
     /* text */
-    color: var(--Primary-water-green-900, #005647);
+    color: ${({ theme }) => theme.colors.Primary["water green-900"]};
     font-family: "Fira Code";
     font-size: 1.4rem;
     font-style: normal;
@@ -22,13 +22,13 @@ export const Button = styled.button`
     line-height: 2.4rem;
 
     &:hover {
-        background: var(--Primary-water-green-900, #005647);
-        color: var(--Primary-water-green-50, #E6FAF7);   
+        background: ${({ theme }) => theme.colors.Primary["water green-900"]};
+        color: ${({ theme }) => theme.colors.Primary["water green-50"]};  
     }
 
     &:active {
         background: none;
-        color: var(--Primary-water-green-900, #005647);
+        color: ${({ theme }) => theme.colors.Primary["water green-900"]};
     }
     
 `

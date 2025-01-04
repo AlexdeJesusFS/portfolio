@@ -10,10 +10,10 @@ export const FooterContainer = styled.footer`
     align-items: center;
     flex-shrink: 0;
 
-    background: var(--Primary-water-green-50, #E6FAF7);
+    background: ${({ theme }) => theme.colors.Primary["water green-50"]};
 
     .copyright {
-        color: var(--Primary-water-green-900, #005647);
+        color: ${({ theme }) => theme.colors.Primary["water green-900"]};
         /* Caption */
         font-family: "Fira Code";
         font-size: 1.2rem;
@@ -47,34 +47,34 @@ export const ContactsContainer = styled.div`
     gap: 2.6rem;
 
     .email {
-        color: var(--Primary-water-green-900, #005647);
+        color: ${({ theme }) => theme.colors.Primary["water green-900"]};
         transition: color 0.4s ease;
         &:hover {
-            color: #E13C30;
+            color: ${({ theme }) => theme.colors.contacts.email};
         }
     }
     
     .github {
-        color: var(--Primary-water-green-900, #005647);
+        color: ${({ theme }) => theme.colors.Primary["water green-900"]};
         transition: color 0.4s ease;
         &:hover {
-            color: #171515;
+            color: ${({ theme }) => theme.colors.contacts.github};
         }
     }
 
     .linkedin {
-        color: var(--Primary-water-green-900, #005647);
+        color: ${({ theme }) => theme.colors.Primary["water green-900"]};
         transition: color 0.4s ease;
         &:hover {
-            color: #0E76A8;
+            color: ${({ theme }) => theme.colors.contacts.linkedin};
         }
     }
 
     .whatsapp {
-        color: var(--Primary-water-green-900, #005647);
+        color: ${({ theme }) => theme.colors.Primary["water green-900"]};
         transition: color 0.4s ease;
         &:hover {
-            color: #25D366;
+            color: ${({ theme }) => theme.colors.contacts.whatsapp};
         }
     }
 `

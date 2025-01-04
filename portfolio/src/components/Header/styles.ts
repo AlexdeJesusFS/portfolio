@@ -4,7 +4,7 @@ import HeaderButton from "./Button/index";
 
 export const Container = styled.header`
     display: flex;
-    height: 6rem;
+    height: 6rem; 
     width: 100%;
     padding: 1.6rem 14.4rem;
     justify-content: flex-end;
@@ -15,7 +15,7 @@ export const Container = styled.header`
     position: fixed;
     z-index: 10; //Valor mais alto de elevação para impedir que outros elementos passem por cima
 
-    background: var(--Primary-water-green-50, #E6FAF7);
+    background: ${({ theme }) => theme.colors.Primary["water green-50"]};
 `
 
 export const LeftSide = styled.div`

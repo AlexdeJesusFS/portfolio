@@ -33,7 +33,7 @@ export default createGlobalStyle`
     h1 {
         color: ${({ theme }) => theme.colors.Primary["water green-600"]};
         font-family: "Source Code Pro";
-        font-size: 5.1rem;
+        font-size: clamp(3.06rem, 3.74vw, 5.1rem);
         font-style: normal;
         font-weight: 600;
         line-height: 4.8rem; /* 94.118% */
@@ -42,7 +42,7 @@ export default createGlobalStyle`
     h3 {
         color: ${({ theme }) => theme.colors.Secondary["cyan blue-400"]};
         font-family: "Source Code Pro";
-        font-size: 3.5rem;
+        font-size: clamp(2.1rem, 2.57vw, 3.5rem);
         font-style: normal;
         font-weight: 600;
         line-height: 3.6rem; /* 102.857% */
@@ -51,7 +51,7 @@ export default createGlobalStyle`
     h4 {
         color: ${({ theme }) => theme.colors.Secondary["cyan blue-400"]};
         font-family: "Source Code Pro";
-        font-size: 2.9rem;
+        font-size: clamp(1.9rem, 2.13vw, 2.9rem);
         font-style: normal;
         font-weight: 500;
         line-height: 3.6rem; /* 124.138% */
@@ -60,7 +60,7 @@ export default createGlobalStyle`
     h6 {
         color: ${({ theme }) => theme.colors.Primary["water green-900"]};
         font-family: "Source Code Pro";
-        font-size: 2rem;
+        font-size: clamp(1.7rem, 1.47vw, 2rem);
         font-style: normal;
         font-weight: 500;
         line-height: 2.4rem; /* 120% */
@@ -70,7 +70,7 @@ export default createGlobalStyle`
         color: ${({ theme }) => theme.colors.Neutral["gray-50"]};
         text-align: justify;
         font-family: "Fira Code";
-        font-size: 1.7rem;
+        font-size: clamp(1.5rem, 1.25vw, 1.7rem);
         font-style: normal;
         font-weight: 450;
         line-height: 2.4rem; /* 141.176% */
@@ -78,7 +78,7 @@ export default createGlobalStyle`
 
     strong {
         color: ${({ theme }) => theme.colors.Feedback.Info["blue-100"]};
-        font-size: 1.7rem;
+        font-size: clamp(1.5rem, 1.25vw, 1.7rem);
     }
 
     a {
@@ -97,7 +97,7 @@ export default createGlobalStyle`
         //text
         text-align: justify;
         font-family: "Fira Code";
-        font-size: 1.7rem;
+        font-size: clamp(1.5rem, 1.25vw, 1.7rem);
         font-style: normal;
         font-weight: 450;
         line-height: 2.4rem; /* 141.176% */

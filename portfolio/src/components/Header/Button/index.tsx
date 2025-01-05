@@ -1,10 +1,10 @@
 import { Button } from "./styles";
 import { IHeaderButtonProps } from "./types";
 
-function HeaderButton({children, onClick, href, ...props}: IHeaderButtonProps) {
+function HeaderButton({children, onClick, href, fontSize, fontWeight, className}: IHeaderButtonProps) {
     return (
-        <a style={{textDecoration: 'none', color: 'inherit'}} href={href}>
-            <Button onClick={onClick} {...props}>
+        <a style={{textDecoration: 'none', color: 'inherit'}} href={href} className={className}>
+            <Button onClick={onClick} fontSize={fontSize} fontWeight={fontWeight}>
                 {children}
             </Button>
         </a>

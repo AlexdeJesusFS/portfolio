@@ -1,4 +1,4 @@
-import { Container, LeftSide, Menu, IconContainer, HeaderTitle } from "./styles"
+import { Container, LeftSide, Menu, IconContainer } from "./styles"
 import HeaderButton from "./Button/index";
 import clickButtonSound from "../../assets/sounds/buttonClicking.wav"
 
@@ -25,7 +25,11 @@ function Header() {
     return (
         <Container>
             <LeftSide>
-                <HeaderTitle onClick={clickTitle} >Alex de Jesus</HeaderTitle>
+                <HeaderButton onClick={clickTitle} 
+                fontSize="clamp(1.7rem, 1.47vw, 2rem);"
+                fontWeight={500}>
+                    Alex de Jesus
+                </HeaderButton>
             </LeftSide>
             <Menu>
                 <HeaderButton href="#sobre" onClick={clickSound} >Sobre{<IconContainer><AboutIcon /></IconContainer>}</HeaderButton>

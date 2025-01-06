@@ -108,7 +108,7 @@ declare module 'styled-components' {
         final: string;
       };
     };
-    breackpoints: {
+    breakpoints: {
       mobile: string;
       tablet: string;
       desktop: string;

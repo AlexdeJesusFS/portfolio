@@ -106,7 +106,7 @@ const theme: DefaultTheme = {
       final: "5px 15px 30px 5px rgba(0, 0, 0, 0.60)",
     },
   },
-  breackpoints: {
+  breakpoints: {
     mobile: "320px",
     tablet: "768px",
     desktop: "1024px",

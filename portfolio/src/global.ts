@@ -36,7 +36,14 @@ export default createGlobalStyle`
         font-size: clamp(3.06rem, 3.74vw, 5.1rem);
         font-style: normal;
         font-weight: 600;
-        line-height: 4.8rem; /* 94.118% */
+        line-height: 4.8rem;
+    }
+    span { //Texto de TypeWrite
+        font-family: "Source Code Pro";
+        font-size: clamp(3.06rem, 3.74vw, 5.1rem);
+        font-style: normal;
+        font-weight: 600;
+        line-height: 4.8rem;
     }
 
     h3 {

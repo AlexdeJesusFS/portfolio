@@ -1,8 +1,10 @@
-import {DefaultTheme} from "styled-components";
+import theme from "./theme/theme"
 
 
-export const media = {
-    mobile: (styles: string) => `@media (max-width: ${(props: DefaultTheme) => props.breakpoints.mobile}) {${styles}}`,
-    tablet: (styles: string) => `@media (max-width: ${(props: DefaultTheme) => props.breakpoints.tablet}) {${styles}}`,
-    desktop: (styles: string) => `@media (min-width: ${(props: DefaultTheme) => props.breakpoints.desktop}) {${styles}}`,
-}
+const media = {
+    mobile: (styles: string) => `@media (max-width: ${theme.breakpoints.mobile}) {${styles}}`,
+    tablet: (styles: string) => `@media (max-width: ${theme.breakpoints.tablet}) {${styles}}`,
+    desktop: (styles: string) => `@media (min-width: ${theme.breakpoints.desktop}) {${styles}}`,
+  };
+
+export default media;

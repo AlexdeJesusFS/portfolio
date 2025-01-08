@@ -27,13 +27,13 @@ function Header() {
             <LeftSide>
                 <HeaderButton onClick={clickTitle} 
                 fontSize="clamp(1.7rem, 1.47vw, 2rem);"
-                fontWeight={500}>
+                fontWeight={600}>
                     Alex de Jesus
                 </HeaderButton>
             </LeftSide>
             <Menu>
-                <HeaderButton href="#sobre" onClick={clickSound} >Sobre{<IconContainer><AboutIcon /></IconContainer>}</HeaderButton>
-                <HeaderButton href="#projetos" onClick={clickSound} >Projetos{<IconContainer><ConstructIcon /></IconContainer>}</HeaderButton>
+                <HeaderButton className="headerButton" href="#sobre" onClick={clickSound} >Sobre{<IconContainer><AboutIcon /></IconContainer>}</HeaderButton>
+                <HeaderButton className="headerButton" href="#projetos" onClick={clickSound} >Projetos{<IconContainer><ConstructIcon /></IconContainer>}</HeaderButton>
                 <HeaderButton href="#fale_comigo" onClick={clickSound} >Fale comigo{<IconContainer><ChatIcon /></IconContainer>}</HeaderButton>
             </Menu>
         </Container>

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import media from "../../media";
 
 
 export const Container = styled.header`
@@ -15,6 +16,12 @@ export const Container = styled.header`
     z-index: 10; //Valor mais alto de elevação para impedir que outros elementos passem por cima
 
     background: ${({ theme }) => theme.colors.Primary["water green-50"]};
+
+    .headerButton {
+        ${media.tablet(`
+            display: none;
+        `)}
+    }
 `
 
 export const LeftSide = styled.div`

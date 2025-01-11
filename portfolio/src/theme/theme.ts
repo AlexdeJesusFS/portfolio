@@ -107,9 +107,9 @@ const theme: DefaultTheme = {
     },
   },
   breakpoints: {
-    mobile: "320px",
+    mobile: "767px",
     tablet: "768px",
-    desktop: "1024px",
+    desktop: "990px",
   },
 };
 

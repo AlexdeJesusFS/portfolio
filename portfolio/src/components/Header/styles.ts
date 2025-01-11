@@ -16,9 +16,17 @@ export const Container = styled.header`
     z-index: 10; //Valor mais alto de elevação para impedir que outros elementos passem por cima
 
     background: ${({ theme }) => theme.colors.Primary["water green-50"]};
+    
+    ${media.tablet(`
+        padding: 1.6rem 3.2rem;
+    `)}
+
+    ${media.mobile(`
+        padding: 1.6rem;
+    `)}
 
     .headerButton {
-        ${media.tablet(`
+        ${media.mobile(`
             display: none;
         `)}
     }
@@ -30,6 +38,9 @@ export const LeftSide = styled.div`
     gap: 1rem;
     flex: 1 0 0;
     align-self: stretch;
+
+    display: flex;
+
 `
 
 export const Menu = styled.div`
@@ -38,6 +49,10 @@ export const Menu = styled.div`
     align-items: center;
     gap: 6rem;
     align-self: stretch;
+
+    ${media.tablet(`
+        gap: 4.8rem;
+    `)}
 `
 
 export const IconContainer = styled.span`

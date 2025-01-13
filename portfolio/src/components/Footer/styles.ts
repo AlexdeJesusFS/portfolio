@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import media from "../../media";
 
 
 export const FooterContainer = styled.footer`
@@ -9,8 +10,20 @@ export const FooterContainer = styled.footer`
     justify-content: center;
     align-items: center;
     flex-shrink: 0;
-
     background: ${({ theme }) => theme.colors.Primary["water green-50"]};
+
+    ${media.tablet(`
+        padding: 0rem 3.2rem;
+    `)}
+
+    ${media.mobile(`
+        display: flex;
+        padding: 1.6rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-self: stretch;
+    `)}
 
     .copyright {
         color: ${({ theme }) => theme.colors.Primary["water green-900"]};
@@ -37,6 +50,10 @@ export const RightSide = styled.div`
     align-items: flex-end;
     gap: 1rem;
     flex: 1 0 0;
+
+    ${media.mobile(`
+        gap: 0rem;
+    `)}
 `
 
 export const ContactsContainer = styled.div`
@@ -77,12 +94,17 @@ export const ContactsContainer = styled.div`
             color: ${({ theme }) => theme.colors.contacts.whatsapp};
         }
     }
+
 `
 
-export const LeftSide = styled.div`
+export const CopyrightContainer = styled.div`
     display: flex;
     align-items: center;
     gap: 0.4rem;
     flex: 1 0 0;
     align-self: stretch;
+
+    ${media.mobile(`
+        justify-content: center;
+    `)}
 `

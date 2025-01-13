@@ -2,6 +2,12 @@ import theme from "./theme/theme"
 
 
 const media = {
+  queries: {
+    mobile:  `(max-width: ${theme.breakpoints.mobile})`,
+    tablet:  `(min-width: ${theme.breakpoints.tablet}) and (max-width: ${theme.breakpoints.desktop})`,
+    desktop: `(min-width: ${theme.breakpoints.desktop})`,
+  },
+
   mobile: (styles: string) =>
     `@media (max-width: ${theme.breakpoints.mobile}) {${styles}}`,
     

@@ -1,6 +1,5 @@
-import { FooterContainer, CopyrightContainer, RightSide, ContactsContainer } from "./styles";
+import { Container, CopyrightContainer, RightSide, ContactsContainer } from "./styles";
 import computerGif from "../../assets/computer.gif";
-import copyright from "../../assets/copyright.svg"
 import { GithubIcon, EmailIcon, LinkedinIcon, WhatsappIcon } from './icons';
 import { useMediaQuery } from 'react-responsive';
 import media from "../../media";
@@ -20,10 +19,9 @@ function Footer() {
     return (
         <>
             {(isTablet || isDesktop) && (
-                <FooterContainer>
+                <Container>
                     <CopyrightContainer>
-                        <img src={copyright} alt="símbolo do copyright" />
-                        <p className="copyright">{currentYear} Alex de Jesus. All rights reserved.</p>
+                        <p className="copyright">© {currentYear} Alex de Jesus. All rights reserved.</p>
                     </CopyrightContainer>
                         <img className="gif-computer" src={computerGif} alt="GIF de um computador antigo com monitor de tubo e com os números de 1 à 5 aparecendo na tela um por vez."/>
                     <RightSide>
@@ -35,11 +33,11 @@ function Footer() {
                             <EmailIcon className="email" href={emailAccount} />
                         </ContactsContainer>
                     </RightSide>
-            </FooterContainer>
+            </Container>
         )}
 
         {isMobile && 
-            <FooterContainer>
+            <Container>
                 <RightSide>
                         <h6>Fale comigo e compartilhe!</h6>
                         <ContactsContainer>
@@ -50,10 +48,9 @@ function Footer() {
                         </ContactsContainer>
                 </RightSide>
                 <CopyrightContainer>
-                    <img src={copyright} alt="símbolo do copyright" />
-                    <p className="copyright">{currentYear} Alex de Jesus. All rights reserved.</p>
+                    <p className="copyright">© {currentYear} Alex de Jesus. All rights reserved.</p>
                 </CopyrightContainer>
-            </FooterContainer>
+            </Container>
         }
         </>
     );

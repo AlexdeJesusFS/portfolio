@@ -2,7 +2,7 @@ import styled from "styled-components";
 import media from "../../media";
 
 
-export const FooterContainer = styled.footer`
+export const Container = styled.footer`
     display: flex;
     width: 100%;
     height: 15rem;
@@ -95,6 +95,20 @@ export const ContactsContainer = styled.div`
         }
     }
 
+    @media (${media.queries.tablet}) or (${media.queries.mobile}) {
+        .email {
+            color: ${({ theme }) => theme.colors.contacts.email};
+        }
+        .github {
+            color: ${({ theme }) => theme.colors.contacts.github};
+        }
+        .linkedin {
+            color: ${({ theme }) => theme.colors.contacts.linkedin};
+        }
+        .whatsapp {
+            color: ${({ theme }) => theme.colors.contacts.whatsapp};
+        }
+    }
 `
 
 export const CopyrightContainer = styled.div`

@@ -11,9 +11,11 @@ export const Container = styled.footer`
     align-items: center;
     flex-shrink: 0;
     background: ${({ theme }) => theme.colors.Primary["water green-50"]};
+    margin-top: 9rem;
 
     ${media.tablet(`
         padding: 0rem 3.2rem;
+        margin-top: 2rem;
     `)}
 
     ${media.mobile(`
@@ -23,6 +25,7 @@ export const Container = styled.footer`
         justify-content: center;
         align-items: center;
         align-self: stretch;
+        margin-top: 0rem;
     `)}
 
     .copyright {

@@ -4,7 +4,7 @@ import theme from "./theme/theme"
 const media = {
   queries: {
     mobile:  `(max-width: ${theme.breakpoints.mobile})`,
-    tablet:  `(min-width: ${theme.breakpoints.tablet}) and (max-width: ${theme.breakpoints.desktop})`,
+    tablet:  `(min-width: ${theme.breakpoints.tablet.min}) and (max-width: ${theme.breakpoints.tablet.max})`,
     desktop: `(min-width: ${theme.breakpoints.desktop})`,
   },
 
@@ -12,7 +12,7 @@ const media = {
     `@media (max-width: ${theme.breakpoints.mobile}) {${styles}}`,
     
   tablet: (styles: string) =>
-    `@media (min-width: ${theme.breakpoints.tablet}) and (max-width: ${theme.breakpoints.desktop}) {${styles}}`,
+    `@media (min-width: ${theme.breakpoints.tablet.min}) and (max-width: ${theme.breakpoints.tablet.max}) {${styles}}`,
     
   desktop: (styles: string) =>
     `@media (min-width: ${theme.breakpoints.desktop}) {${styles}}`,

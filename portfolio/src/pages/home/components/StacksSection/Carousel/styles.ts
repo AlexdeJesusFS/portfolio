@@ -9,7 +9,7 @@ export const Container = styled.div`
         }
     }
 
-    width: 98.7vw;//largura correta para evitar scroll horizontal
+    width: 100%;//98.7vw;//largura correta para evitar scroll horizontal
     overflow: hidden;
 `;
 

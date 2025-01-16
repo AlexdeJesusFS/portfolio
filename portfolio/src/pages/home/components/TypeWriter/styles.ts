@@ -8,13 +8,18 @@ export const Container = styled.div`
     align-items: center;
     justify-content: center;
     gap: 20px;
-    //gap: clamp(30px);
     white-space: nowrap; //evita quebra de linhas
     
     //text:
     color: ${({ theme }) => theme.colors.Primary["water green-600"]};
+
+    @media (max-width: 500px) { //quebra de linha entre as divs para não ultrapassar largura da tela
+        flex-direction: column;
+    };
 `;
 
 export const TypedContainer = styled.div`
-    width: clamp(203px, 25.03vw, 333px);
+    @media (min-width: 500px) { //quebra de linha entre as divs para não ultrapassar largura da tela
+        width: clamp(203px, 25.03vw, 333px);
+    };
 `;

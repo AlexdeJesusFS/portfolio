@@ -108,8 +108,8 @@ const theme: DefaultTheme = {
   },
   breakpoints: {
     mobile: "767px",
-    tablet: "768px",
-    desktop: "990px",
+    tablet: {min: "768px", max: "990px"},
+    desktop: "991px",
   },
 };
 

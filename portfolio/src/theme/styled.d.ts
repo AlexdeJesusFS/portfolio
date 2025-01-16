@@ -110,7 +110,7 @@ declare module 'styled-components' {
     };
     breakpoints: {
       mobile: string;
-      tablet: string;
+      tablet: {min: string, max: string};
       desktop: string;
     };
   }

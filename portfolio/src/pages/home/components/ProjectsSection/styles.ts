@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import media from "../../../../media";
 
 
 export const Section = styled.section`
@@ -23,6 +24,10 @@ export const ContainerCards = styled.div`
     align-items: center;
     gap: 24px;
     align-self: stretch;
+
+    ${media.mobile(`
+        flex-direction: column;
+    `)}
 `
 
 export const ColumnCards = styled.div`

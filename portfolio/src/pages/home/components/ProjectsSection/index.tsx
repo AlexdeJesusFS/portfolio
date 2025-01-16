@@ -4,7 +4,7 @@ import Card from "../../../../components/Card";
 import CardTag from "../../../../components/Card/Tag";
 import { 
   htmlIcon, cssIcon, tsIcon, figmaIcon, reactIcon, pythonIcon, apiIcon, sqlserverIcon
-} from "../../../../assets/dev-icon-tags/index"; 
+} from "../../../../assets/dev-icon-tags/index";
 
 
 const projectsColumnLeft = [
@@ -62,39 +62,40 @@ const projectsColumnRight = [
 
 
 function ProjectsSection() {
-    return (
-      <Section>
-          <EllipesesBackground className="ellipses-background"/>
-          <p id="projetos"></p>
-          <br />
-          <h3>Projetos.</h3>
-          <ContainerCards>
-            <ColumnCards>{/*Left*/}
-            {projectsColumnLeft.map((project, index) => (
-              <Card key={index} title={project.title} text={project.text}>
-                {project.tags.map((tag, i) => (
-                  <CardTag key={i} text={tag.text}>
-                    <img src={tag.icon} alt={`${tag.text} ícone`} />
-                  </CardTag>
-                ))}
-              </Card>
-            ))}
-            </ColumnCards>
 
-            <ColumnCards>{/*Right*/}
-            {projectsColumnRight.map((project, index) => (
-              <Card key={index} title={project.title} text={project.text}>
-                {project.tags.map((tag, i) => (
-                  <CardTag key={i} text={tag.text}>
-                    <img src={tag.icon} alt={`${tag.text} ícone`} />
-                  </CardTag>
-                ))}
-              </Card>
+  return (
+    <Section>
+      <EllipesesBackground className="ellipses-background"/>
+      <p id="projetos"></p>
+      <br />
+      <h3>Projetos.</h3>
+      <ContainerCards>
+        <ColumnCards>{/*Left*/}
+        {projectsColumnLeft.map((project, index) => (
+          <Card key={index} title={project.title} text={project.text}>
+            {project.tags.map((tag, i) => (
+              <CardTag key={i} text={tag.text}>
+                <img src={tag.icon} alt={`${tag.text} ícone`} />
+              </CardTag>
             ))}
-            </ColumnCards>
-          </ContainerCards>
-      </Section>
-    );
+          </Card>
+        ))}
+        </ColumnCards>
+
+        <ColumnCards>{/*Right*/}
+        {projectsColumnRight.map((project, index) => (
+          <Card key={index} title={project.title} text={project.text}>
+            {project.tags.map((tag, i) => (
+              <CardTag key={i} text={tag.text}>
+                <img src={tag.icon} alt={`${tag.text} ícone`} />
+              </CardTag>
+            ))}
+          </Card>
+        ))}
+        </ColumnCards>
+      </ContainerCards>
+    </Section>
+  );
 };
 
 export default ProjectsSection;

@@ -18,7 +18,7 @@ function Home() {
 
       <MainContainer>
 
-        <AnimationsContainer>
+      <AnimationsContainer>
           <EllipsesAnimation />
           <TypeWrite prefix="Desenvolvedor" phrases={listPhrases} typeSpeed={100} backSpeed={50} 
           loop={false} backDelay={1000} startDelay={4500}/>

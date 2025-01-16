@@ -16,7 +16,7 @@ export const MainContainer = styled.main`
     `)}
 
     ${media.mobile(`
-        padding: 3.8rem 1.6rem;
+        padding: 14.6rem 1.6rem;
         gap: 8.7rem;
     `)}
 `

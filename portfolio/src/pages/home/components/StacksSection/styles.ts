@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import media from "../../../../media";
 
-
 export const Section = styled.section`
     display: flex;
     flex-direction: column;
@@ -34,4 +33,4 @@ export const Section = styled.section`
             margin-left: 1.6rem;
         `)}
     }
-`
+`;

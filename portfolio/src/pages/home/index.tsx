@@ -1,41 +1,44 @@
+import Footer from "../../components/Footer";
 import Header from "../../components/Header";
-import { AnimationsContainer, MainContainer } from "./styles";
-import EllipsesAnimation from "./components/EllipsesAnimation";
-import TypeWrite from "./components/TypeWriter";
 import AboutSection from "./components/AboutSection";
+import EllipsesAnimation from "./components/EllipsesAnimation";
 import ProjectsSection from "./components/ProjectsSection";
 import StacksSection from "./components/StacksSection";
-import Footer from "../../components/Footer";
+import TypeWrite from "./components/TypeWriter";
+import { AnimationsContainer, MainContainer } from "./styles";
 
-
-const listPhrases = ["Front-end", "Back-end", "Full-Stack"]
+const listPhrases = ["Front-end", "Back-end", "Full-Stack"];
 
 function Home() {
+	return (
+		<>
+			<Header />
 
-  return (
-    <>
-      <Header />
+			<MainContainer>
+				<AnimationsContainer>
+					<EllipsesAnimation />
+					<TypeWrite
+						prefix="Desenvolvedor"
+						phrases={listPhrases}
+						typeSpeed={100}
+						backSpeed={50}
+						loop={false}
+						backDelay={1000}
+						startDelay={4500}
+					/>
+				</AnimationsContainer>
 
-      <MainContainer>
+				<AboutSection />
 
-      <AnimationsContainer>
-          <EllipsesAnimation />
-          <TypeWrite prefix="Desenvolvedor" phrases={listPhrases} typeSpeed={100} backSpeed={50} 
-          loop={false} backDelay={1000} startDelay={4500}/>
-        </AnimationsContainer>
+				<ProjectsSection />
 
-        <AboutSection />
+				<StacksSection />
+			</MainContainer>
 
-        <ProjectsSection />
-        
-        <StacksSection />
-
-      </MainContainer>
-
-      <p id="fale_comigo"></p>
-      <Footer />
-    </>
-  );
-};
+			<p id="fale_comigo" />
+			<Footer />
+		</>
+	);
+}
 
 export default Home;

@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import media from "../../media";
 
-
 export const Container = styled.header`
     display: flex;
     height: 6rem; 
@@ -30,7 +29,7 @@ export const Container = styled.header`
             display: none;
         `)}
     }
-`
+`;
 
 export const LeftSide = styled.div`
     display: flex;
@@ -41,7 +40,7 @@ export const LeftSide = styled.div`
 
     display: flex;
 
-`
+`;
 
 export const Menu = styled.div`
     display: flex;
@@ -53,11 +52,11 @@ export const Menu = styled.div`
     ${media.tablet(`
         gap: 4.8rem;
     `)}
-`
+`;
 
 export const IconContainer = styled.span`
     display: flex; 
     justify-content: right; 
     margin-bottom: 0.4rem; //ajusta o icone na melhor posição
     height: 100%;
-`
+`;

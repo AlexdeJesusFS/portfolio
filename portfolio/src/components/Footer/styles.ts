@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import media from "../../media";
 
-
 export const Container = styled.footer`
     display: flex;
     width: 100%;
@@ -43,7 +42,7 @@ export const Container = styled.footer`
         height: 147px;
         flex-shrink: 0;
     }
-`
+`;
 
 export const RightSide = styled.div`
     display: flex;
@@ -57,7 +56,7 @@ export const RightSide = styled.div`
     ${media.mobile(`
         gap: 0rem;
     `)}
-`
+`;
 
 export const ContactsContainer = styled.div`
     display: flex;
@@ -112,7 +111,7 @@ export const ContactsContainer = styled.div`
             color: ${({ theme }) => theme.colors.contacts.whatsapp};
         }
     }
-`
+`;
 
 export const CopyrightContainer = styled.div`
     display: flex;
@@ -124,4 +123,4 @@ export const CopyrightContainer = styled.div`
     ${media.mobile(`
         justify-content: center;
     `)}
-`
+`;

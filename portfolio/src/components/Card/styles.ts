@@ -1,5 +1,4 @@
-import styled from "styled-components"
-
+import styled from "styled-components";
 
 export const Container = styled.div`
     display: flex;
@@ -27,7 +26,7 @@ export const Container = styled.div`
         box-shadow: ${({ theme }) => theme.shadows.cards.initial}, ${({ theme }) => theme.shadows.cards.final};
         transform: translateY(-2px); /* Elevação sutil */
     }
-`
+`;
 
 export const TagContainer = styled.div`
     display: flex;
@@ -37,8 +36,8 @@ export const TagContainer = styled.div`
     gap: 1rem;
     align-self: stretch;
     flex-wrap: wrap;
-`
+`;
 
 export const Title = styled.h6`
     color: ${({ theme }) => theme.colors.Primary["water green-400"]};
-`
+`;

@@ -1,6 +1,5 @@
 import styled from "styled-components";
 
-
 export const Button = styled.button`
     display: flex;
     height: 5.4rem;
@@ -57,4 +56,4 @@ export const Button = styled.button`
         box-shadow: 2px 2px 0 ${({ theme }) => theme.colors.Primary["water green-900"]};
         transition: transform 0.1s ease, box-shadow 0.1s ease;
     }
-`
+`;

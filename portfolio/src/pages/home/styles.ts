@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import media from "../../media";
 
-
 export const MainContainer = styled.main`
     display: flex;
     padding: 12.8rem 14.4rem;
@@ -19,7 +18,7 @@ export const MainContainer = styled.main`
         padding: 14.6rem 1.6rem;
         gap: 8.7rem;
     `)}
-`
+`;
 
 export const AnimationsContainer = styled.div`
     display: flex;
@@ -31,4 +30,4 @@ export const AnimationsContainer = styled.div`
     ${media.mobile(`
         gap: 2.1rem;
     `)}
-`
+`;

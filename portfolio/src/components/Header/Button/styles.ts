@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
-
-export const Button = styled.button<{fontSize?: string; fontWeight?: number}>`
+export const Button = styled.button<{ fontSize?: string; fontWeight?: number }>`
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -16,9 +15,9 @@ export const Button = styled.button<{fontSize?: string; fontWeight?: number}>`
     /* text */
     color: ${({ theme }) => theme.colors.Primary["water green-900"]};
     font-family: "Fira Code";
-    font-size: ${({fontSize}) => fontSize || '1.4rem'};
+    font-size: ${({ fontSize }) => fontSize || "1.4rem"};
     font-style: normal;
-    font-weight: ${({fontWeight}) => fontWeight || 700};
+    font-weight: ${({ fontWeight }) => fontWeight || 700};
     line-height: 2.4rem;
 
     &:hover {
@@ -31,4 +30,4 @@ export const Button = styled.button<{fontSize?: string; fontWeight?: number}>`
         color: ${({ theme }) => theme.colors.Primary["water green-900"]};
     }
     
-`
+`;

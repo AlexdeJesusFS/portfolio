@@ -51,6 +51,6 @@ export const DevIcons = styled.div`
         display: block;
         width: 100%;
         flex-shrink: 0;
-        background: url(${props => props.theme.icons});
+        background: url(${(props) => props.theme.icons});
     }
 `;

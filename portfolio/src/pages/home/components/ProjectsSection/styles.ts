@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import media from "../../../../media";
 
-
 export const Section = styled.section`
     display: flex;
     flex-direction: column;
@@ -17,7 +16,7 @@ export const Section = styled.section`
         height: 100%;
         z-index: -1; //mantém o background atrás do conteúdo
     }
-`
+`;
 
 export const ContainerCards = styled.div`
     display: flex;
@@ -28,7 +27,7 @@ export const ContainerCards = styled.div`
     ${media.mobile(`
         flex-direction: column;
     `)}
-`
+`;
 
 export const ColumnCards = styled.div`
     display: flex;
@@ -38,4 +37,4 @@ export const ColumnCards = styled.div`
     align-items: center;
     align-self: stretch;
     gap: 24px;
-`
+`;

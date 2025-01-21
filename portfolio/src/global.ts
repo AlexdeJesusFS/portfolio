@@ -4,7 +4,6 @@ import cursorPointer from "./assets/cursor/cursorPointer.svg";
 import cursorText from "./assets/cursor/cursorText.svg";
 //import {color, space, layout, ColorProps, SpaceProps, LayoutProps } from "styled-system";
 
-
 export default createGlobalStyle`
 
     * {
@@ -18,7 +17,7 @@ export default createGlobalStyle`
     body {
         margin: 0;
         padding: 0;
-        background-color: ${({theme}) => theme.colors.background};
+        background-color: ${({ theme }) => theme.colors.background};
         cursor: url(${cursorDefault}), url(${cursorDefault}.cur), url(${cursorDefault}.png) 12 12, auto;
         overflow-x: hidden;
     }
@@ -110,4 +109,4 @@ export default createGlobalStyle`
         font-weight: 450;
         line-height: 2.4rem; /* 141.176% */
     }
-`
+`;

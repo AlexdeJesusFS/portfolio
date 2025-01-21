@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import theme from "../../../theme/theme";
 
-
 export const Tag = styled.div`
     display: flex;
     padding: 0rem 0.8rem;
@@ -18,4 +17,4 @@ export const Tag = styled.div`
     font-style: normal;
     font-weight: 700;
     line-height: 2.4rem;
-`
+`;

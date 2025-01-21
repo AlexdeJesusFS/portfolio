@@ -1,6 +1,6 @@
-import {ReactNode} from "react";
+import type { ReactNode } from "react";
 
 export interface ICardTag {
-    children: ReactNode;
-    text: string;
-};
+	children: ReactNode;
+	text: string;
+}

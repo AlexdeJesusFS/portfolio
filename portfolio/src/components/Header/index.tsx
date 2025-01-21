@@ -1,30 +1,21 @@
+import { useNavigate } from "react-router-dom";
 import clickButtonSound from "../../assets/sounds/buttonClicking.wav";
 import HeaderButton from "./Button/index";
+import { AboutIcon, ChatIcon, ConstructIcon } from "./icons";
 import { Container, IconContainer, LeftSide, Menu } from "./styles";
 
-import { AboutIcon, ChatIcon, ConstructIcon } from "./icons";
-
-import { useNavigate } from "react-router-dom";
-
 function Header() {
-	const navigate = useNavigate();
 
 	function clickSound() {
 		const audio = new Audio(clickButtonSound);
 		audio.play();
 	}
 
-	function clickTitle() {
-		const audio = new Audio(clickButtonSound);
-		audio.play();
-		navigate("/");
-	}
-
 	return (
 		<Container>
 			<LeftSide>
 				<HeaderButton
-					onClick={clickTitle}
+					href="/"
 					fontSize="clamp(1.7rem, 1.47vw, 2rem);"
 					fontWeight={600}
 				>

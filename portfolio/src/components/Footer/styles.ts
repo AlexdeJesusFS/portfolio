@@ -14,7 +14,6 @@ export const Container = styled.footer`
 
     ${media.tablet(`
         padding: 0rem 3.2rem;
-        margin-top: 2rem;
     `)}
 
     ${media.mobile(`
@@ -24,7 +23,6 @@ export const Container = styled.footer`
         justify-content: center;
         align-items: center;
         align-self: stretch;
-        margin-top: 0rem;
     `)}
 
     .copyright {
@@ -37,7 +35,7 @@ export const Container = styled.footer`
         line-height: 2.4rem; /* 200% */
     }
 
-    .gif-computer {
+    .computer {
         width: 152px;
         height: 147px;
         flex-shrink: 0;

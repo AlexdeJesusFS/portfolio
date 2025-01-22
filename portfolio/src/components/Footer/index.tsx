@@ -1,5 +1,6 @@
 import { useMediaQuery } from "react-responsive";
-import computerGif from "../../assets/computer.gif";
+import computerMp4 from "../../assets/videos/computer.mp4";
+import computerWebm from "../../assets/videos/computer.webm";
 import media from "../../media";
 import { EmailIcon, GithubIcon, LinkedinIcon, WhatsappIcon } from "./icons";
 import {
@@ -30,12 +31,12 @@ function Footer() {
 							© {currentYear} Alex de Jesus. All rights reserved.
 						</p>
 					</CopyrightContainer>
-					<img
-						title="computador antigo"
-						className="gif-computer"
-						src={computerGif}
-						alt="GIF de um computador antigo com monitor de tubo e com os números de 1 à 5 aparecendo na tela um por vez."
-					/>
+
+					<video muted autoPlay loop className="computer">
+						<source src={computerWebm} type="video/webm" />
+						<source src={computerMp4} type="video/mp4" />
+					</video>
+
 					<RightSide>
 						<h6>Fale comigo e compartilhe!</h6>
 						<ContactsContainer>
@@ -59,6 +60,7 @@ function Footer() {
 							<EmailIcon className="email" href={emailAccount} />
 						</ContactsContainer>
 					</RightSide>
+
 					<CopyrightContainer>
 						<p className="copyright">
 							© {currentYear} Alex de Jesus. All rights reserved.

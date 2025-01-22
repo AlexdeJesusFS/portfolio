@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import cursorPointer from "../../../../../assets/cursor/cursorPointer.svg";
+import media from "../../../../../media";
 
 export const Container = styled.div`
     li {
@@ -33,7 +34,11 @@ export const DevIcons = styled.div`
     }
     
     img {
-        width: 100px;
+        width: 75px;
+
+        ${media.desktop(`
+            width: 100px;
+        `)};
     }
 
     @keyframes slide {

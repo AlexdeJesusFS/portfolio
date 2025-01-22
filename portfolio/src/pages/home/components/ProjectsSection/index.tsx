@@ -81,10 +81,10 @@ function ProjectsSection() {
 			<ContainerCards>
 				<ColumnCards>
 					{/*Left*/}
-					{projectsColumnLeft.map((project, index) => (
+					{projectsColumnLeft.map((project) => (
 						//uso de id e comibinação de id tag text para uso de um valor único para chave que não pode ser alterado dinamicamente
 						<Card key={project.id} title={project.title} text={project.text}>
-							{project.tags.map((tag, i) => (
+							{project.tags.map((tag) => (
 								<CardTag key={`${project.id}-${tag.text}`} text={tag.text}>
 									<img src={tag.icon} alt={`${tag.text} ícone`} />
 								</CardTag>
@@ -95,9 +95,9 @@ function ProjectsSection() {
 
 				<ColumnCards>
 					{/*Right*/}
-					{projectsColumnRight.map((project, index) => (
+					{projectsColumnRight.map((project) => (
 						<Card key={project.id} title={project.title} text={project.text}>
-							{project.tags.map((tag, i) => (
+							{project.tags.map((tag) => (
 								<CardTag key={`${project.id}-${tag.text}`} text={tag.text}>
 									<img src={tag.icon} alt={`${tag.text} ícone`} />
 								</CardTag>

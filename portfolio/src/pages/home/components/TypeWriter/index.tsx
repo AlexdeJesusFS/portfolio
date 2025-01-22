@@ -1,4 +1,3 @@
-//import { useState } from "react";
 import { ReactTyped } from "react-typed";
 import { Container, TypedContainer } from "./styles";
 import type { ITypewriterProps } from "./types";
@@ -12,8 +11,6 @@ function TypeWrite({
 	backDelay,
 	startDelay,
 }: ITypewriterProps) {
-	// Estado para controlar final do primeiro ReactTyped
-	//const [isFirstComplete, setIsFirstComplete] = useState(false);
 
 	return (
 		<Container>

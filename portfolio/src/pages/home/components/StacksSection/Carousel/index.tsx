@@ -1,18 +1,22 @@
+import { v4 as uuidv4 } from "uuid";
 import icons from "../../../../../assets/stacks-icons";
 import { Container, DevIcons } from "./styles";
 
 function Carousel() {
-	//obtendo os valores de `icons` e duplicando.
-	const iconList = [...Object.values(icons), ...Object.values(icons)];
+	// Criando uma lista de ícones com IDs únicos
+	const iconList = [
+		//uuid evita duplicação de valor para key devido ao componente precisar de valores duplicados para as imagens
+		...Object.values(icons).map((icon) => ({ id: uuidv4(), src: icon })),
+		...Object.values(icons).map((icon) => ({ id: uuidv4(), src: icon })),
+	];
 
 	return (
 		<Container>
 			<DevIcons>
 				<ul>
-					{iconList.map((icon, index) => (
-						//uso de um valor único diferente de index para um valor que não pode ser alterado dinamicamente
-						<li key={icon}>
-							<img src={icon} alt={`Icone ${index}`} />
+					{iconList.map((icon) => (
+						<li key={icon.id}>
+							<img src={icon.src} alt="Ícone" />
 						</li>
 					))}
 				</ul>

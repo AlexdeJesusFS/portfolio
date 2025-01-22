@@ -1,4 +1,3 @@
-import { useNavigate } from "react-router-dom";
 import clickButtonSound from "../../assets/sounds/buttonClicking.wav";
 import HeaderButton from "./Button/index";
 import { AboutIcon, ChatIcon, ConstructIcon } from "./icons";

@@ -11,11 +11,13 @@ export const MainContainer = styled.main`
 
     ${media.tablet(`
         padding: 8.6rem 3.2rem;
+        padding-bottom: 2rem;
         gap: 17.4rem;
     `)}
 
     ${media.mobile(`
         padding: 14.6rem 1.6rem;
+        padding-bottom: 0rem;
         gap: 8.7rem;
     `)}
 `;

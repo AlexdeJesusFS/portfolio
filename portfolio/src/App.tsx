@@ -4,11 +4,12 @@ import Home from "./pages/home";
 function App() {
 	return (
 		<div className="App">
-			<Router 
+			<Router
 				future={{
 					v7_relativeSplatPath: true,
 					v7_startTransition: true,
-			}}>
+				}}
+			>
 				<Routes>
 					<Route path="/" element={<Home />} />
 				</Routes>

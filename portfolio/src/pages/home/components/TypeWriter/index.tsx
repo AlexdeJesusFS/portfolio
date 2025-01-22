@@ -11,7 +11,6 @@ function TypeWrite({
 	backDelay,
 	startDelay,
 }: ITypewriterProps) {
-
 	return (
 		<Container>
 			<span>{prefix}</span>

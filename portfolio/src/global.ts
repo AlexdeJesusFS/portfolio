@@ -64,6 +64,15 @@ export default createGlobalStyle`
         line-height: 3.6rem; /* 124.138% */
     }
 
+    h5 {
+        color: ${({ theme }) => theme.colors.Primary["water green-400"]};
+        font-family: "Source Code Pro";
+        font-size: clamp(18px, 2vw, 24px);
+        font-style: normal;
+        font-weight: 500;
+        line-height: 2.8rem; /* 116.667% */
+    }
+
     h6 {
         color: ${({ theme }) => theme.colors.Primary["water green-900"]};
         font-family: "Source Code Pro";

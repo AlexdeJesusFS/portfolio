@@ -1,10 +1,10 @@
-import { Container, TagContainer, Title } from "./styles";
+import { Container, TagContainer } from "./styles";
 import type { ICard } from "./types";
 
 function Card({ title, children, text }: ICard) {
 	return (
 		<Container>
-			<Title>{title}</Title>
+			<h5>{title}</h5>
 			<TagContainer>{children}</TagContainer>
 			<p>{text}</p>
 		</Container>

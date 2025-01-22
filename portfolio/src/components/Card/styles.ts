@@ -37,7 +37,3 @@ export const TagContainer = styled.div`
     align-self: stretch;
     flex-wrap: wrap;
 `;
-
-export const Title = styled.h6`
-    color: ${({ theme }) => theme.colors.Primary["water green-400"]};
-`;

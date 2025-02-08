@@ -21,7 +21,7 @@ export const Container = styled.div`
     z-index: 1;
 
     &:hover {
-        border: 1.5px solid var(--Neutral-gray-0, #FFF);
+        border: 1.5px solid ${({ theme }) => theme.colors.Neutral["gray-0"]};
         /* Transição suave de sombra */
         box-shadow: ${({ theme }) => theme.shadows.cards.initial}, ${({ theme }) => theme.shadows.cards.final};
         transform: translateY(-2px); /* Elevação sutil */

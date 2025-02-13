@@ -5,7 +5,7 @@ import EllipsesAnimation from "./components/EllipsesAnimation";
 import ProjectsSection from "./components/ProjectsSection";
 import StacksSection from "./components/StacksSection";
 import TypeWrite from "./components/TypeWriter";
-import { AnimationsContainer, MainContainer } from "./styles";
+import "./styles.css";
 
 const listPhrases = ["Front-end", "Back-end", "Full-Stack"];
 
@@ -14,8 +14,8 @@ function Home() {
 		<>
 			<Header />
 
-			<MainContainer>
-				<AnimationsContainer>
+			<main className="main-container">
+				<div className="animations-container">
 					<EllipsesAnimation />
 					<TypeWrite
 						prefix="Desenvolvedor"
@@ -26,14 +26,14 @@ function Home() {
 						backDelay={1000}
 						startDelay={4500}
 					/>
-				</AnimationsContainer>
+				</div>
 
 				<AboutSection />
 
 				<ProjectsSection />
 
 				<StacksSection />
-			</MainContainer>
+			</main>
 
 			<p id="fale_comigo" />
 			<Footer />

@@ -11,7 +11,7 @@ import {
 import Card from "../../../../components/Card";
 import CardTag from "../../../../components/Card/Tag";
 import EllipesesBackground from "./EllipsesBackground";
-import { ColumnCards, ContainerCards, Section } from "./styles";
+import "./styles.css";
 
 const projectsColumnLeft = [
 	{
@@ -73,13 +73,13 @@ const projectsColumnRight = [
 
 function ProjectsSection() {
 	return (
-		<Section>
+		<section className="section">
 			<EllipesesBackground className="ellipses-background" />
 			<p id="projetos" />
 			<br />
 			<h3>Projetos.</h3>
-			<ContainerCards>
-				<ColumnCards>
+			<div className="container-cards">
+				<div className="column-cards">
 					{/*Left*/}
 					{projectsColumnLeft.map((project) => (
 						//uso de id e comibinação de id tag text para uso de um valor único para chave que não pode ser alterado dinamicamente
@@ -91,9 +91,9 @@ function ProjectsSection() {
 							))}
 						</Card>
 					))}
-				</ColumnCards>
+				</div>
 
-				<ColumnCards>
+				<div className="column-cards">
 					{/*Right*/}
 					{projectsColumnRight.map((project) => (
 						<Card key={project.id} title={project.title} text={project.text}>
@@ -104,9 +104,9 @@ function ProjectsSection() {
 							))}
 						</Card>
 					))}
-				</ColumnCards>
-			</ContainerCards>
-		</Section>
+				</div>
+			</div>
+		</section>
 	);
 }
 

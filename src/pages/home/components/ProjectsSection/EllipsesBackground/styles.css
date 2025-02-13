@@ -1,29 +1,27 @@
-import styled from "styled-components";
-
-export const Container = styled.div`
+.container {
     display: flex;
-    width: 89.3%;//impede scroll horizontal
+    width: 89.3%; /* Impede scroll horizontal */
     justify-content: center;
     align-items: center;
-    gap: -424px;
-
+    gap: -424px; /* Valor negativo pode não ter efeito desejado */
+    
     position: absolute;
     z-index: -1;
-`;
+}
 
-export const EllipseBase = styled.div`
+.ellipse {
     flex: 1 0 0;
     align-self: stretch;
 
-    //style
+    /* Estilização */
     border-radius: 840px;
     filter: blur(250px);
-`;
+}
 
-export const Ellipse1 = styled(EllipseBase)`
+.ellipse1 {
     background: linear-gradient(180deg, #8A2BE2 0%, #FF4C4C 100%);
-`;
+}
 
-export const Ellipse2 = styled(EllipseBase)`
+.ellipse2 {
     background: linear-gradient(180deg, #2ECC71 0%, #5D5FEF 100%);
-`;
+}

@@ -22,4 +22,9 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-TODO.txt
+# Configurações do VS Code
+.vscode/
+
+# Arquivos temporários do VS Code
+.vscode/*.code-workspace
+.vscode/*.history

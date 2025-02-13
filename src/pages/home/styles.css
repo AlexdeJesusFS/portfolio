@@ -1,35 +1,40 @@
-import styled from "styled-components";
-import media from "../../media";
-
-export const MainContainer = styled.main`
+/* styles.css */
+.main-container {
     display: flex;
     padding: 12.8rem 14.4rem;
     flex-direction: column;
     align-items: center;
     gap: 20.6rem;
     align-self: stretch;
+}
 
-    ${media.tablet(`
+/* Responsividade */
+@media (max-width: 990px) {
+    .main-container {
         padding: 8.6rem 3.2rem;
         padding-bottom: 2rem;
         gap: 17.4rem;
-    `)}
+    }
+}
 
-    ${media.mobile(`
+@media (max-width: 767px) {
+    .main-container {
         padding: 14.6rem 1.6rem;
         padding-bottom: 0rem;
         gap: 8.7rem;
-    `)}
-`;
+    }
+}
 
-export const AnimationsContainer = styled.div`
+.animations-container {
     display: flex;
     width: 100%;
     flex-direction: column;
     align-items: center;
     gap: 8.2rem;
+}
 
-    ${media.mobile(`
+@media (max-width: 767px) {
+    .animations-container {
         gap: 2.1rem;
-    `)}
-`;
+    }
+}

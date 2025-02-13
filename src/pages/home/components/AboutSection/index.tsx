@@ -1,10 +1,14 @@
 import DownloadCVButton from "./DownloadButton";
-import { Section } from "./styles";
+import "./styles.css";
 
 function AboutSection() {
 	return (
-		<Section>
+		<section className="section">
 			<p id="sobre" />
+			<br />
+			<br />
+			<br />
+			<br />
 			<br />
 			<h3>Sobre mim.</h3>
 			<p>
@@ -21,7 +25,7 @@ function AboutSection() {
 				buscando melhorar o desempenho individual e da equipe.
 			</p>
 			<DownloadCVButton />
-		</Section>
+		</section>
 	);
 }
 

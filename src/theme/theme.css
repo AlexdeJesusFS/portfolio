@@ -1,108 +1,108 @@
 :root {
-    /* Primary Colors */
-    --water-green-50: #e6faf7;
-    --water-green-100: #b0efe5;
-    --water-green-200: #8ae8d8;
-    --water-green-300: #54ddc6;
-    --water-green-400: #33d6bb;
-    --water-green-500: #00ccaa;
-    --water-green-600: #00ba9b;
-    --water-green-700: #009179;
-    --water-green-800: #00705e;
-    --water-green-900: #005647;
-  
-    /* Secondary Colors */
-    --cyan-blue-50: #e6f6fa;
-    --cyan-blue-100: #b0e3ef;
-    --cyan-blue-200: #8ad5e8;
-    --cyan-blue-300: #54c2dd;
-    --cyan-blue-400: #33b6d6;
-    --cyan-blue-500: #00a4cc;
-    --cyan-blue-600: #0095ba;
-    --cyan-blue-700: #007491;
-    --cyan-blue-800: #005a70;
-    --cyan-blue-900: #004556;
-  
-    /* Neutral Colors */
-    --gray-0: #ffffff;
-    --gray-50: #f8f9f9;
-    --gray-100: #ebecee;
-    --gray-200: #e1e3e5;
-    --gray-300: #d3d7d9;
-    --gray-400: #cacfd2;
-    --gray-500: #bdc3c7;
-    --gray-600: #acb1b5;
-    --gray-700: #868a8d;
-    --gray-800: #686b6d;
-    --gray-900: #4f5254;
-    --gray-1000: #1d1f20;
-    --gray-full: #000000;
-  
-    /* Feedback - Info */
-    --blue-50: #e9f5fe;
-    --blue-100: #badefb;
-    --blue-200: #99cff9;
-    --blue-300: #6ab9f7;
-    --blue-400: #4dabf5;
-    --blue-500: #2196f3;
-    --blue-600: #1e89dd;
-    --blue-700: #176bad;
-    --blue-800: #125386;
-    --blue-900: #0e3f66;
-  
-    /* Feedback - Success */
-    --green-50: #ecf5ed;
-    --green-100: #c5e1c6;
-    --green-200: #a9d2ab;
-    --green-300: #82bd84;
-    --green-400: #69b16d;
-    --green-500: #449d48;
-    --green-600: #3e8f42;
-    --green-700: #306f33;
-    --green-800: #255628;
-    --green-900: #1d421e;
-  
-    /* Feedback - Warning */
-    --yellow-50: #fffdeb;
-    --yellow-100: #fff9c2;
-    --yellow-200: #fff6a5;
-    --yellow-300: #fff27c;
-    --yellow-400: #ffef62;
-    --yellow-500: #ffeb3b;
-    --yellow-600: #e8d636;
-    --yellow-700: #b5a72a;
-    --yellow-800: #8c8120;
-    --yellow-900: #6b6319;
-  
-    /* Feedback - Danger */
-    --orange-50: #feeceb;
-    --orange-100: #fcc5c1;
-    --orange-200: #faa9a3;
-    --orange-300: #f88178;
-    --orange-400: #f6695e;
-    --orange-500: #f44336;
-    --orange-600: #de3d31;
-    --orange-700: #ad3026;
-    --orange-800: #86251e;
-    --orange-900: #661c17;
-  
-    /* Background */
-    --background: #121212;
-  
-    /* Contacts */
-    --github: #171515;
-    --linkedin: #0E76A8;
-    --whatsapp: #25D366;
-    --email: #E13C30;
-    --contact-default: #005647;
-  
-    /* Shadows */
-    --shadow-card-initial: 0px 10px 20px 0px rgba(0, 0, 0, 0.40);
-    --shadow-card-final: 5px 15px 30px 5px rgba(0, 0, 0, 0.60);
-  
-    /* Breakpoints */
-    --mobile: 767px;
-    --tablet-min: 768px;
-    --tablet-max: 990px;
-    --desktop: 991px;
-  }
+	/* Primary Colors */
+	--water-green-50: #e6faf7;
+	--water-green-100: #b0efe5;
+	--water-green-200: #8ae8d8;
+	--water-green-300: #54ddc6;
+	--water-green-400: #33d6bb;
+	--water-green-500: #00ccaa;
+	--water-green-600: #00ba9b;
+	--water-green-700: #009179;
+	--water-green-800: #00705e;
+	--water-green-900: #005647;
+
+	/* Secondary Colors */
+	--cyan-blue-50: #e6f6fa;
+	--cyan-blue-100: #b0e3ef;
+	--cyan-blue-200: #8ad5e8;
+	--cyan-blue-300: #54c2dd;
+	--cyan-blue-400: #33b6d6;
+	--cyan-blue-500: #00a4cc;
+	--cyan-blue-600: #0095ba;
+	--cyan-blue-700: #007491;
+	--cyan-blue-800: #005a70;
+	--cyan-blue-900: #004556;
+
+	/* Neutral Colors */
+	--gray-0: #ffffff;
+	--gray-50: #f8f9f9;
+	--gray-100: #ebecee;
+	--gray-200: #e1e3e5;
+	--gray-300: #d3d7d9;
+	--gray-400: #cacfd2;
+	--gray-500: #bdc3c7;
+	--gray-600: #acb1b5;
+	--gray-700: #868a8d;
+	--gray-800: #686b6d;
+	--gray-900: #4f5254;
+	--gray-1000: #1d1f20;
+	--gray-full: #000000;
+
+	/* Feedback - Info */
+	--blue-50: #e9f5fe;
+	--blue-100: #badefb;
+	--blue-200: #99cff9;
+	--blue-300: #6ab9f7;
+	--blue-400: #4dabf5;
+	--blue-500: #2196f3;
+	--blue-600: #1e89dd;
+	--blue-700: #176bad;
+	--blue-800: #125386;
+	--blue-900: #0e3f66;
+
+	/* Feedback - Success */
+	--green-50: #ecf5ed;
+	--green-100: #c5e1c6;
+	--green-200: #a9d2ab;
+	--green-300: #82bd84;
+	--green-400: #69b16d;
+	--green-500: #449d48;
+	--green-600: #3e8f42;
+	--green-700: #306f33;
+	--green-800: #255628;
+	--green-900: #1d421e;
+
+	/* Feedback - Warning */
+	--yellow-50: #fffdeb;
+	--yellow-100: #fff9c2;
+	--yellow-200: #fff6a5;
+	--yellow-300: #fff27c;
+	--yellow-400: #ffef62;
+	--yellow-500: #ffeb3b;
+	--yellow-600: #e8d636;
+	--yellow-700: #b5a72a;
+	--yellow-800: #8c8120;
+	--yellow-900: #6b6319;
+
+	/* Feedback - Danger */
+	--orange-50: #feeceb;
+	--orange-100: #fcc5c1;
+	--orange-200: #faa9a3;
+	--orange-300: #f88178;
+	--orange-400: #f6695e;
+	--orange-500: #f44336;
+	--orange-600: #de3d31;
+	--orange-700: #ad3026;
+	--orange-800: #86251e;
+	--orange-900: #661c17;
+
+	/* Background */
+	--background: #121212;
+
+	/* Contacts */
+	--github: #171515;
+	--linkedin: #0e76a8;
+	--whatsapp: #25d366;
+	--email: #e13c30;
+	--contact-default: #005647;
+
+	/* Shadows */
+	--shadow-card-initial: 0px 10px 20px 0px rgba(0, 0, 0, 0.4);
+	--shadow-card-final: 5px 15px 30px 5px rgba(0, 0, 0, 0.6);
+
+	/* Breakpoints */
+	--mobile: 767px;
+	--tablet-min: 768px;
+	--tablet-max: 990px;
+	--desktop: 991px;
+}

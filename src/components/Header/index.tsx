@@ -4,7 +4,6 @@ import { AboutIcon, ChatIcon, ConstructIcon } from "./icons";
 import { Container, IconContainer, LeftSide, Menu } from "./styles";
 
 function Header() {
-
 	function clickSound() {
 		const audio = new Audio(clickButtonSound);
 		audio.play();

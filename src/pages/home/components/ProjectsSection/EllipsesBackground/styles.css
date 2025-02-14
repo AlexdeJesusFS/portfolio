@@ -1,27 +1,27 @@
 .container {
-    display: flex;
-    width: 89.3%; /* Impede scroll horizontal */
-    justify-content: center;
-    align-items: center;
-    gap: -424px; /* Valor negativo pode não ter efeito desejado */
-    
-    position: absolute;
-    z-index: -1;
+	display: flex;
+	width: 89.3%; /* Impede scroll horizontal */
+	justify-content: center;
+	align-items: center;
+	gap: -424px; /* Valor negativo pode não ter efeito desejado */
+
+	position: absolute;
+	z-index: -1;
 }
 
 .ellipse {
-    flex: 1 0 0;
-    align-self: stretch;
+	flex: 1 0 0;
+	align-self: stretch;
 
-    /* Estilização */
-    border-radius: 840px;
-    filter: blur(250px);
+	/* Estilização */
+	border-radius: 840px;
+	filter: blur(250px);
 }
 
 .ellipse1 {
-    background: linear-gradient(180deg, #8A2BE2 0%, #FF4C4C 100%);
+	background: linear-gradient(180deg, #8a2be2 0%, #ff4c4c 100%);
 }
 
 .ellipse2 {
-    background: linear-gradient(180deg, #2ECC71 0%, #5D5FEF 100%);
+	background: linear-gradient(180deg, #2ecc71 0%, #5d5fef 100%);
 }

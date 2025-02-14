@@ -2,43 +2,43 @@
 
 /* Section */
 .section {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 4.4rem;
-    position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 4.4rem;
+	position: relative;
 }
 
 .section .ellipses-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1; /* Mantém o background atrás do conteúdo */
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1; /* Mantém o background atrás do conteúdo */
 }
 
 /* ContainerCards */
 .container-cards {
-    display: flex;
-    align-items: center;
-    gap: 24px;
-    align-self: stretch;
+	display: flex;
+	align-items: center;
+	gap: 24px;
+	align-self: stretch;
 }
 
 @media (max-width: var(--mobile)) {
-    .container-cards {
-        flex-direction: column;
-    }
+	.container-cards {
+		flex-direction: column;
+	}
 }
 
 /* ColumnCards */
 .column-cards {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    flex-direction: column;
-    align-items: center;
-    align-self: stretch;
-    gap: 24px;
+	display: flex;
+	width: 100%;
+	height: 100%;
+	flex-direction: column;
+	align-items: center;
+	align-self: stretch;
+	gap: 24px;
 }

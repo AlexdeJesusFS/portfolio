@@ -5,7 +5,7 @@ import "./styles.css";
 function DownloadButton() {
 	return (
 		<a href={Cv} style={{ textDecoration: "none", color: "inherit" }}>
-			<button className="button">
+			<button className="button" type="button">
 				{"Baixar CV"} <img src={DownloadIcon} alt="arquivo download ícone" />
 			</button>
 		</a>

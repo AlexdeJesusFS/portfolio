@@ -10,35 +10,35 @@ import "./styles.css";
 const listPhrases = ["Front-end", "Back-end", "Full-Stack"];
 
 function Home() {
-	return (
-		<>
-			<Header />
+  return (
+    <>
+      <Header />
 
-			<main className="main-container">
-				<div className="animations-container">
-					<EllipsesAnimation />
-					<TypeWrite
-						prefix="Desenvolvedor"
-						phrases={listPhrases}
-						typeSpeed={100}
-						backSpeed={50}
-						loop={false}
-						backDelay={1000}
-						startDelay={4500}
-					/>
-				</div>
+      <main className="main-container">
+        <div className="animations-container">
+          <EllipsesAnimation />
+          <TypeWrite
+            prefix="Desenvolvedor"
+            phrases={listPhrases}
+            typeSpeed={100}
+            backSpeed={50}
+            loop={false}
+            backDelay={1000}
+            startDelay={4500}
+          />
+        </div>
 
-				<AboutSection />
+        <AboutSection />
 
-				<ProjectsSection />
+        <ProjectsSection />
 
-				<StacksSection />
-			</main>
+        <StacksSection />
+      </main>
 
-			<p id="fale_comigo" />
-			<Footer />
-		</>
-	);
+      <p id="fale_comigo" />
+      <Footer />
+    </>
+  );
 }
 
 export default Home;

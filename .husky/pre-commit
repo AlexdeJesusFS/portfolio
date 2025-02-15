@@ -1,0 +1,13 @@
+echo "🔍 Rodando Biome antes do commit..."
+
+# Formatar automaticamente os arquivos
+npx biome format --write .
+
+# Rodar o linter
+npx biome ci . || {
+  echo "❌ Erros de lint encontrados pelo Biome! Corrija antes de fazer o commit."
+  exit 1  # Impede o commit se houver erro
+}
+
+echo "✅ Código validado pelo Biome com sucesso! Commit permitido."
+exit 0  # Permite o commit se não houver erro

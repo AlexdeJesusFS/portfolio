@@ -1,0 +1,23 @@
+name: Code quality
+
+on: # trigger (gatilho), quando vai ser acionado
+  push:
+  pull_request:
+
+jobs: # passo a passo a ser executado
+  quality: # nome do pipeline
+    runs-on: ubuntu-latest # onde vai rodar
+    steps:
+        # cópia o código do repositório para o ambiente preprando para execução
+      - name: Checkout
+        uses: actions/checkout@v4
+
+        # configura o biome no ambiente
+      - name: Setup Biome
+        uses: biomejs/setup-biome@v2
+        with:
+          version: latest
+
+        # roda comando biome específico para CI, bloqueia caso haja erros de formatação ou lint
+      - name: Run Biome
+        run: biome ci .

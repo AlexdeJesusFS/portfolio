@@ -1,0 +1,122 @@
+/*@import "./theme/theme.css";*/
+
+* {
+  font-size: 62.5%; /* 10px */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--background);
+  cursor: url("../assets/cursor/cursorDefault.svg") 12 12, auto;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li {
+  cursor: url("../assets/cursor/cursorText.svg") 12 12, text;
+}
+
+button,
+a {
+  cursor: url("../assets/cursor/cursorPointer.svg") 12 12, pointer; /* Fallbacks */
+}
+
+h1 {
+  color: var(--water-green-600);
+  font-family: var(--primary-font);
+  font-size: clamp(3.06rem, 3.74vw, 5.1rem);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 4.8rem;
+}
+
+span {
+  /* Texto de TypeWrite */
+  font-family: var(--primary-font);
+  font-size: clamp(3.06rem, 3.74vw, 5.1rem);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 4.8rem;
+}
+
+h3 {
+  color: var(--cyan-blue-400);
+  font-family: var(--primary-font);
+  font-size: clamp(2.1rem, 2.57vw, 3.5rem);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 3.6rem; /* 102.857% */
+}
+
+h4 {
+  color: var(--cyan-blue-400);
+  font-family: var(--primary-font);
+  font-size: clamp(1.9rem, 2.13vw, 2.9rem);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 3.6rem; /* 124.138% */
+}
+
+h5 {
+  color: var(--water-green-400);
+  font-family: var(--primary-font);
+  font-size: clamp(18px, 2vw, 24px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2.8rem; /* 116.667% */
+}
+
+h6 {
+  color: var(--water-green-900);
+  font-family: var(--primary-font);
+  font-size: clamp(1.7rem, 1.47vw, 2rem);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2.4rem; /* 120% */
+}
+
+p {
+  color: var(--gray-50);
+  text-align: justify;
+  font-family: var(--secondary-font);
+  font-size: clamp(1.5rem, 1.25vw, 1.7rem);
+  font-style: normal;
+  font-weight: 450;
+  line-height: 2.4rem; /* 141.176% */
+}
+
+strong {
+  color: var(--blue-100);
+  font-size: clamp(1.5rem, 1.25vw, 1.7rem);
+}
+
+a {
+  color: var(--blue-300);
+  padding: 0.2rem 0.2rem;
+}
+
+a:visited {
+  color: var(--orange-300);
+}
+
+ul {
+  color: var(--gray-50);
+  list-style: inside;
+  text-align: justify;
+  font-family: var(--secondary-font);
+  font-size: clamp(1.5rem, 1.25vw, 1.7rem);
+  font-style: normal;
+  font-weight: 450;
+  line-height: 2.4rem; /* 141.176% */
+}

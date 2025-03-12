@@ -5,7 +5,7 @@ import EllipsesAnimation from "./components/EllipsesAnimation";
 import ProjectsSection from "./components/ProjectsSection";
 import StacksSection from "./components/StacksSection";
 import TypeWrite from "./components/TypeWriter";
-import "./styles.css";
+import styles from "./styles.module.scss";
 
 const listPhrases = ["Front-end", "Back-end", "Full-Stack"];
 
@@ -14,8 +14,8 @@ function Home() {
     <>
       <Header />
 
-      <main className="main-container">
-        <div className="animations-container">
+      <main className={styles.mainContainer}>
+        <div className={styles.animationsContainer}>
           <EllipsesAnimation />
           <TypeWrite
             prefix="Desenvolvedor"

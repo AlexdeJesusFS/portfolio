@@ -1,0 +1,28 @@
+/* src/components/SomeComponent/SomeComponent.module.css */
+.container {
+  display: flex;
+  flex-direction: row;
+  /* width: 790px; */
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  white-space: nowrap; /* evita quebra de linhas */
+
+  /* text: */
+  color: var(--water-green-600);
+}
+
+@media (max-width: 500px) {
+  /* quebra de linha entre as divs para não ultrapassar largura da tela */
+  .container {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 500px) {
+  /* quebra de linha entre as divs para não ultrapassar largura da tela */
+  .typedContainer {
+    width: clamp(203px, 25.03vw, 333px);
+  }
+}

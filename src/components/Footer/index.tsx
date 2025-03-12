@@ -1,14 +1,9 @@
+// src/components/Footer/Footer.tsx
 import { useMediaQuery } from "react-responsive";
 import computerMp4 from "../../assets/videos/computer.mp4";
 import computerWebm from "../../assets/videos/computer.webm";
-import media from "../../media";
 import { EmailIcon, GithubIcon, LinkedinIcon, WhatsappIcon } from "./icons";
-import {
-  ContactsContainer,
-  Container,
-  CopyrightContainer,
-  RightSide,
-} from "./styles";
+import styles from "./styles.module.scss";
 
 function Footer() {
   const currentYear = new Date().getFullYear();
@@ -18,55 +13,69 @@ function Footer() {
     "whatsapp://send?text=Ei, olha esse portfolio que incrível! url aqui";
   const linkedinAccount = "https://www.linkedin.com/in/alexdejesusfs/";
 
-  const isMobile = useMediaQuery({ query: media.queries.mobile });
-  const isTablet = useMediaQuery({ query: media.queries.tablet });
-  const isDesktop = useMediaQuery({ query: media.queries.desktop });
+  const isMobile = useMediaQuery({ query: "(max-width: 767px)" });
+  const isTablet = useMediaQuery({
+    query: "(min-width: 768px) and (max-width: 990px)",
+  });
+  const isDesktop = useMediaQuery({ query: "(min-width: 991px)" });
 
   return (
     <>
       {(isTablet || isDesktop) && (
-        <Container>
-          <CopyrightContainer>
-            <p className="copyright">
+        <footer className={styles.container}>
+          <div className={styles.copyrightContainer}>
+            <p className={styles.copyright}>
               © {currentYear} Alex de Jesus. All rights reserved.
             </p>
-          </CopyrightContainer>
+          </div>
 
-          <video muted autoPlay loop className="computer">
+          <video muted autoPlay loop className={styles.computer}>
             <source src={computerWebm} type="video/webm" />
             <source src={computerMp4} type="video/mp4" />
           </video>
 
-          <RightSide>
+          <div className={styles.rightSide}>
             <h6>Fale comigo e compartilhe!</h6>
-            <ContactsContainer>
-              <GithubIcon className="github" href={gitgubAccount} />
-              <LinkedinIcon className="linkedin" href={linkedinAccount} />
-              <WhatsappIcon className="whatsapp" href={whatsappMessage} />
-              <EmailIcon className="email" href={emailAccount} />
-            </ContactsContainer>
-          </RightSide>
-        </Container>
+            <div className={styles.contactsContainer}>
+              <GithubIcon className={styles.github} href={gitgubAccount} />
+              <LinkedinIcon
+                className={styles.linkedin}
+                href={linkedinAccount}
+              />
+              <WhatsappIcon
+                className={styles.whatsapp}
+                href={whatsappMessage}
+              />
+              <EmailIcon className={styles.email} href={emailAccount} />
+            </div>
+          </div>
+        </footer>
       )}
 
       {isMobile && (
-        <Container>
-          <RightSide>
+        <footer className={styles.container}>
+          <div className={styles.rightSide}>
             <h6>Fale comigo e compartilhe!</h6>
-            <ContactsContainer>
-              <GithubIcon className="github" href={gitgubAccount} />
-              <LinkedinIcon className="linkedin" href={linkedinAccount} />
-              <WhatsappIcon className="whatsapp" href={whatsappMessage} />
-              <EmailIcon className="email" href={emailAccount} />
-            </ContactsContainer>
-          </RightSide>
+            <div className={styles.contactsContainer}>
+              <GithubIcon className={styles.github} href={gitgubAccount} />
+              <LinkedinIcon
+                className={styles.linkedin}
+                href={linkedinAccount}
+              />
+              <WhatsappIcon
+                className={styles.whatsapp}
+                href={whatsappMessage}
+              />
+              <EmailIcon className={styles.email} href={emailAccount} />
+            </div>
+          </div>
 
-          <CopyrightContainer>
-            <p className="copyright">
+          <div className={styles.copyrightContainer}>
+            <p className={styles.copyright}>
               © {currentYear} Alex de Jesus. All rights reserved.
             </p>
-          </CopyrightContainer>
-        </Container>
+          </div>
+        </footer>
       )}
     </>
   );

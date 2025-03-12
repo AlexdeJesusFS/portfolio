@@ -1,9 +1,9 @@
 .container {
   display: flex;
-  width: 89.3%; /* Impede scroll horizontal */
+  width: 89.3%; /* impede scroll horizontal */
   justify-content: center;
   align-items: center;
-  gap: -424px; /* Valor negativo pode não ter efeito desejado */
+  gap: -424px;
 
   position: absolute;
   z-index: -1;
@@ -12,8 +12,6 @@
 .ellipse {
   flex: 1 0 0;
   align-self: stretch;
-
-  /* Estilização */
   border-radius: 840px;
   filter: blur(250px);
 }

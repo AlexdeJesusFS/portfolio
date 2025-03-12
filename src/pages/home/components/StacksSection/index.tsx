@@ -1,12 +1,12 @@
 import Carousel from "./Carousel";
-import { Section } from "./styles";
+import styles from "./styles.module.scss";
 
 function StacksSection() {
   return (
-    <Section>
+    <section className={styles.section}>
       <h4>Tecnologias.</h4>
       <Carousel />
-    </Section>
+    </section>
   );
 }
 

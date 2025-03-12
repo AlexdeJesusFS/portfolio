@@ -1,7 +1,7 @@
 import clickButtonSound from "../../assets/sounds/buttonClicking.wav";
-import HeaderButton from "./Button/index";
+import HeaderButton from "./Button";
 import { AboutIcon, ChatIcon, ConstructIcon } from "./icons";
-import { Container, IconContainer, LeftSide, Menu } from "./styles";
+import styles from "./styles.module.scss";
 
 function Header() {
   function clickSound() {
@@ -10,51 +10,47 @@ function Header() {
   }
 
   return (
-    <Container>
-      <LeftSide>
-        <HeaderButton
-          href="/"
-          fontSize="clamp(1.7rem, 1.47vw, 2rem);"
-          fontWeight={600}
-        >
+    <header className={styles.container}>
+      <div className={styles.leftSide}>
+        <HeaderButton href="/" className={styles.headerTitle}>
           Alex de Jesus
         </HeaderButton>
-      </LeftSide>
-      <Menu>
+      </div>
+      <div className={styles.menu}>
         <HeaderButton
-          className="headerButton"
+          className={styles.hideMobileButton}
           href="#sobre"
           onClick={clickSound}
         >
           Sobre
           {
-            <IconContainer>
+            <span className={styles.iconContainer}>
               <AboutIcon />
-            </IconContainer>
+            </span>
           }
         </HeaderButton>
         <HeaderButton
-          className="headerButton"
+          className={styles.hideMobileButton}
           href="#projetos"
           onClick={clickSound}
         >
           Projetos
           {
-            <IconContainer>
+            <span className={styles.iconContainer}>
               <ConstructIcon />
-            </IconContainer>
+            </span>
           }
         </HeaderButton>
         <HeaderButton href="#fale_comigo" onClick={clickSound}>
           Fale comigo
           {
-            <IconContainer>
+            <span className={styles.iconContainer}>
               <ChatIcon />
-            </IconContainer>
+            </span>
           }
         </HeaderButton>
-      </Menu>
-    </Container>
+      </div>
+    </header>
   );
 }
 

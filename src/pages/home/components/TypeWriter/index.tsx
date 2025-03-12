@@ -1,5 +1,5 @@
 import { ReactTyped } from "react-typed";
-import { Container, TypedContainer } from "./styles";
+import styles from "./styles.module.css";
 import type { ITypewriterProps } from "./types";
 
 function TypeWrite({
@@ -12,10 +12,10 @@ function TypeWrite({
   startDelay,
 }: ITypewriterProps) {
   return (
-    <Container>
+    <div className={styles.container}>
       <span>{prefix}</span>
 
-      <TypedContainer>
+      <div className={styles.typedContainer}>
         <ReactTyped
           className="typed"
           strings={phrases} // Frases dinâmicas passadas como props
@@ -26,8 +26,8 @@ function TypeWrite({
           startDelay={startDelay} // Sem delay adicional
           showCursor={true} // Cursor ativado para o segundo
         />
-      </TypedContainer>
-    </Container>
+      </div>
+    </div>
   );
 }
 

@@ -1,0 +1,31 @@
+// src/components/SomeComponent/SomeComponent.module.scss
+@use '../../../../styles/media.scss' as media;
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8.4rem;
+
+  width: calc(100% + 28.8rem);
+
+  @include media.tablet {
+    width: calc(100% + 6.4rem);
+  }
+
+  @include media.mobile {
+    width: calc(100% + 2.2rem);
+  }
+
+  h4 {
+    margin-left: 14.2rem;
+
+    @include media.tablet {
+      margin-left: 3.2rem;
+    }
+
+    @include media.mobile {
+      margin-left: 1.6rem;
+    }
+  }
+}

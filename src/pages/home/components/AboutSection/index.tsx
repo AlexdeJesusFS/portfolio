@@ -1,9 +1,9 @@
 import DownloadCVButton from "./DownloadButton";
-import "./styles.css";
+import styles from "./styles.module.css";
 
 function AboutSection() {
   return (
-    <section className="section">
+    <section className={styles.section}>
       <p id="sobre" />
       <br />
       <br />

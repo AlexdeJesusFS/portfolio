@@ -11,7 +11,7 @@ import {
 import Card from "../../../../components/Card";
 import CardTag from "../../../../components/Card/Tag";
 import EllipesesBackground from "./EllipsesBackground";
-import "./styles.css";
+import styles from "./styles.module.scss";
 
 const projectsColumnLeft = [
   {
@@ -73,16 +73,17 @@ const projectsColumnRight = [
 
 function ProjectsSection() {
   return (
-    <section className="section">
-      <EllipesesBackground className="ellipses-background" />
+    <section className={styles.section}>
+      <EllipesesBackground className={styles.ellipsesBackground} />
       <p id="projetos" />
       <br />
       <h3>Projetos.</h3>
-      <div className="container-cards">
-        <div className="column-cards">
+      <div className={styles.containerCards}>
+        <div className={styles.columnCards}>
           {/*Left*/}
           {projectsColumnLeft.map((project) => (
-            //uso de id e comibinação de id tag text para uso de um valor único para chave que não pode ser alterado dinamicamente
+            //uso de id e comibinação de id tag text para uso de um valor único
+            //para chave que não pode ser alterado dinamicamente
             <Card key={project.id} title={project.title} text={project.text}>
               {project.tags.map((tag) => (
                 <CardTag key={`${project.id}-${tag.text}`} text={tag.text}>
@@ -93,7 +94,7 @@ function ProjectsSection() {
           ))}
         </div>
 
-        <div className="column-cards">
+        <div className={styles.columnCards}>
           {/*Right*/}
           {projectsColumnRight.map((project) => (
             <Card key={project.id} title={project.title} text={project.text}>

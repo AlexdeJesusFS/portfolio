@@ -1,23 +1,21 @@
-import { Button } from "./styles";
+import styles from "./styles.module.css";
 import type { IHeaderButtonProps } from "./types";
 
 function HeaderButton({
   children,
   onClick,
   href,
-  fontSize,
-  fontWeight,
   className,
 }: IHeaderButtonProps) {
   return (
-    <a
-      style={{ textDecoration: "none", color: "inherit" }}
-      href={href}
-      className={className}
-    >
-      <Button onClick={onClick} fontSize={fontSize} fontWeight={fontWeight}>
+    <a style={{ textDecoration: "none", color: "inherit" }} href={href}>
+      <button
+        onClick={onClick}
+        className={`${styles.button} ${className || ""}`} // Combina estilos
+        type="button"
+      >
         {children}
-      </Button>
+      </button>
     </a>
   );
 }

@@ -1,0 +1,37 @@
+.container {
+  display: flex;
+  flex: 1; /*Permite que o card cresça automaticamente*/
+
+  padding: 0.8rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.2rem;
+
+  border-radius: 8px;
+  border: 1.5px solid var(--gray-50);
+  background: var(--gray-1000);
+
+  /* Card Shadows/Heavy Shadow */
+  box-shadow: var(--shadow-card-initial);
+  /* Transição mais suave */
+  transition: box-shadow 0.4s ease-in-out, transform 0.4s ease-in-out;
+  z-index: 1;
+
+  &:hover {
+    border: 1.5px solid var(--gray-0);
+    /* Transição suave de sombra */
+    box-shadow: var(--shadow-card-initial), var(--shadow-card-final);
+    /* Elevação sutil */
+    transform: translateY(-2px);
+  }
+}
+
+.tagContainer {
+  display: flex;
+  padding: 0.8rem 0rem;
+  align-items: center;
+  align-content: center;
+  gap: 1rem;
+  align-self: stretch;
+  flex-wrap: wrap;
+}

@@ -1,10 +1,10 @@
-import "./styles.css";
+import styles from "./styles.module.css";
 
 function EllipesesBackground({ className }: { className?: string }) {
   return (
-    <div className={`container ${className}`.trim()}>
-      <div className="ellipse ellipse1" />
-      <div className="ellipse ellipse2" />
+    <div className={`${styles.container} ${className || ""}`.trim()}>
+      <div className={`${styles.ellipse} ${styles.ellipse1}`} />
+      <div className={`${styles.ellipse} ${styles.ellipse2}`} />
     </div>
   );
 }

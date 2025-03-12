@@ -1,11 +1,11 @@
-import { Tag } from "./styles";
+import styles from "./styles.module.css";
 import type { ICardTag } from "./types";
 
 function CardTag({ children, text }: ICardTag) {
   return (
-    <Tag>
+    <div className={styles.tag}>
       {text} {children}
-    </Tag>
+    </div>
   );
 }
 

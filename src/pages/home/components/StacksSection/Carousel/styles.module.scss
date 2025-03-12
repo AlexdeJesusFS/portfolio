@@ -1,0 +1,65 @@
+// src/components/DevIcons/DevIcons.module.scss
+@use '../../../../../styles/media.scss' as media;
+
+.container {
+  li {
+    list-style: none;
+
+    &:hover {
+      //sobrepõe a definição padrão de cursor text para cursor pointer
+      cursor: url(../../../../../assets/cursor/cursorPointer.svg) 12 12, pointer;
+    }
+  }
+
+  width: 100%;
+  overflow: hidden;
+}
+
+.devIcons {
+  max-width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+
+  ul {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+
+    /* Criar o efeito contínuo */
+    animation: slide 14s infinite linear;
+    /* Importante para o fluxo contínuo */
+    width: max-content;
+  }
+
+  ul:hover {
+    animation-play-state: paused;
+  }
+
+  img {
+    width: 75px;
+
+    @include media.desktop {
+      width: 100px;
+    }
+  }
+
+  @keyframes slide {
+    0% {
+      /* Começa na posição inicial */
+      transform: translateX(0);
+    }
+
+    100% {
+      /* Move metade do conteúdo */
+      transform: translateX(-50%);
+    }
+  }
+
+  /* Duplicação visual */
+  ul::after {
+    content: "";
+    display: block;
+    width: 100%;
+    flex-shrink: 0;
+  }
+}

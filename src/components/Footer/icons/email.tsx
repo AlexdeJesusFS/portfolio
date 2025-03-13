@@ -1,4 +1,11 @@
-const github = ({ color = "currentColor", size = "40px", className, href }) => (
+import type { Iicons } from "./types";
+
+const email: React.FC<Iicons> = ({
+  color = "currentColor",
+  size = "40px",
+  className,
+  href,
+}: Iicons) => (
   <a href={href} className={className}>
     <svg
       width={size}
@@ -17,4 +24,4 @@ const github = ({ color = "currentColor", size = "40px", className, href }) => (
   </a>
 );
 
-export default github;
+export default email;

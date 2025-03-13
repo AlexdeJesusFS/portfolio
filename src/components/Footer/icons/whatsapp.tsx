@@ -1,9 +1,11 @@
-const whatsapp = ({
+import type { Iicons } from "./types";
+
+const whatsapp: React.FC<Iicons> = ({
   color = "currentColor",
   size = "40px",
   className,
   href,
-}) => (
+}: Iicons) => (
   <a href={href} className={className}>
     <svg
       width={size}

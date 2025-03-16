@@ -2,7 +2,7 @@
 <html lang="pt-BR">
   <head>
     <meta charset="utf-8" />
-    <link rel="head icon" href="./favicon.ico" type="image/png"/>
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
@@ -10,15 +10,37 @@
       content="Web site portfolio, mostra mais sobre mim, minhas habilidades e projetos."
     />
 
-    <!--Source Code Pro-->
+    <!-- Pré-conexão com Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
 
-    <!--Fira Code-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <!-- Source Code Pro - Pré-carregamento -->
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+      as="style"
+      onload="this.rel='stylesheet'"
+    />
+
+    <!-- Fira Code + Source Code Pro - Pré-carregamento -->
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+      as="style"
+      onload="this.rel='stylesheet'"
+    />
+
+    <!-- Fallback para navegadores sem JavaScript -->
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+      />
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+      />
+    </noscript>
 
     <title>AlexdeJesusFS</title>
   </head>

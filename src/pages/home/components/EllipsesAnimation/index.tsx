@@ -1,14 +1,10 @@
-import Lottie from "lottie-react";
-import EllipsesAnimationJson from "../../../../assets/lottie-jsons/ellipsesAnimation.json";
+import animationWebm from "../../../../assets/videos/animation.webm";
 
 function EllipsesAnimation() {
   return (
-    <Lottie
-      animationData={EllipsesAnimationJson}
-      loop={false}
-      autoplay={true}
-      style={{ width: "100%", maxWidth: 600, minWidth: 320 }}
-    />
+    <video muted autoPlay>
+      <source src={animationWebm} type="video/webm" />
+    </video>
   );
 }
 

@@ -7,7 +7,7 @@ const chat = ({ color = "currentColor", size = "25" }) => (
     xmlns="http://www.w3.org/2000/svg"
     aria-label="Ícone de balão de fala/chat"
   >
-    <title>Ícone de balão de fala/chat</title>
+    <title>Balão de fala/chat</title>
     <path
       stroke={color}
       strokeWidth="1.33333"

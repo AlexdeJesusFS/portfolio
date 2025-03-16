@@ -17,7 +17,11 @@ function Carousel() {
         <ul>
           {iconList.map((icon) => (
             <li key={icon.id}>
-              <img src={icon.src} alt={`Ícone ${icon.name}`} />
+              <img
+                src={icon.src}
+                alt={`Ícone ${icon.name}`}
+                title={`${icon.name}`}
+              />
             </li>
           ))}
         </ul>

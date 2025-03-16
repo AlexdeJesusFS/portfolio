@@ -7,7 +7,7 @@ const construct = ({ color = "currentColor", size = "25" }) => (
     xmlns="http://www.w3.org/2000/svg"
     aria-label="Ícone de ferramentas cruzadas/projetos"
   >
-    <title>Ícone de ferramentas cruzadas</title>
+    <title>Ferramentas cruzadas</title>
     <path
       stroke={color}
       strokeMiterlimit="10"

@@ -10,19 +10,14 @@
   "files": {
     "ignoreUnknown": false, //se true, ignora arquivos desconhecidos. Aqui, está desativado
     //lista de arquivos e diretórios ignorados pelo Biome
-    "ignore": [
-      "package-lock.json",
-      "package.json",
-      "public/",
-      ".husky/",
-      "assets/"
-    ],
+    "ignore": ["package-lock.json", "package.json", "public/", ".husky/", "assets/"],
     //define o tamanho máximo permitido para arquivos analisados (2.5 MiB), ellipsesAnimation.json é 2.1 MiB
     "maxSize": 2621440
   },
   "formatter": {
     "enabled": true, //ativa o formatador automático do Biome
-    "useEditorconfig": true //faz com que o Biome siga as regras definidas no .editorconfig
+    "useEditorconfig": true, //faz com que o Biome siga as regras definidas no .editorconfig
+    "lineWidth": 110 //aumenta quantidade de caracteres escritos em uma única linha
   },
   "organizeImports": {
     "enabled": true //ativa a organização automática de imports

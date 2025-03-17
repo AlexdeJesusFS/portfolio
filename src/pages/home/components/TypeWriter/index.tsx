@@ -2,15 +2,7 @@ import { ReactTyped } from "react-typed";
 import styles from "./styles.module.css";
 import type { ITypewriterProps } from "./types";
 
-function TypeWrite({
-  prefix,
-  phrases,
-  typeSpeed,
-  backSpeed,
-  loop,
-  backDelay,
-  startDelay,
-}: ITypewriterProps) {
+function TypeWrite({ prefix, phrases, typeSpeed, backSpeed, loop, backDelay, startDelay }: ITypewriterProps) {
   return (
     <div className={styles.container}>
       <span>{prefix}</span>

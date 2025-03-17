@@ -17,11 +17,7 @@ function Header() {
         </HeaderButton>
       </div>
       <div className={styles.menu}>
-        <HeaderButton
-          className={styles.hideMobileButton}
-          href="#sobre"
-          onClick={clickSound}
-        >
+        <HeaderButton className={styles.hideMobileButton} href="#sobre" onClick={clickSound}>
           Sobre
           {
             <span className={styles.iconContainer}>
@@ -29,11 +25,7 @@ function Header() {
             </span>
           }
         </HeaderButton>
-        <HeaderButton
-          className={styles.hideMobileButton}
-          href="#projetos"
-          onClick={clickSound}
-        >
+        <HeaderButton className={styles.hideMobileButton} href="#projetos" onClick={clickSound}>
           Projetos
           {
             <span className={styles.iconContainer}>

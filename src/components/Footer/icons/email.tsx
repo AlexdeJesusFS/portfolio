@@ -1,11 +1,6 @@
 import type { Iicons } from "./types";
 
-const email: React.FC<Iicons> = ({
-  color = "currentColor",
-  size = "40px",
-  className,
-  href,
-}: Iicons) => (
+const email: React.FC<Iicons> = ({ color = "currentColor", size = "40px", className, href }: Iicons) => (
   <a href={href} className={className}>
     <svg
       width={size}

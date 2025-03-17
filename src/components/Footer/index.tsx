@@ -9,8 +9,7 @@ function Footer() {
   const currentYear = new Date().getFullYear();
   const gitgubAccount = "https://github.com/AlexdeJesusFS";
   const emailAccount = "mailto:alexjesus864@gmail.com";
-  const whatsappMessage =
-    "whatsapp://send?text=Ei, olha esse portfolio que incrível! url aqui";
+  const whatsappMessage = "whatsapp://send?text=Ei, olha esse portfolio que incrível! url aqui";
   const linkedinAccount = "https://www.linkedin.com/in/alexdejesusfs/";
 
   const isMobile = useMediaQuery({ query: "(max-width: 767px)" });
@@ -24,9 +23,7 @@ function Footer() {
       {(isTablet || isDesktop) && (
         <footer className={styles.container}>
           <div className={styles.copyrightContainer}>
-            <p className={styles.copyright}>
-              © {currentYear} Alex de Jesus. All rights reserved.
-            </p>
+            <p className={styles.copyright}>© {currentYear} Alex de Jesus. All rights reserved.</p>
           </div>
 
           <video muted autoPlay loop className={styles.computer}>
@@ -38,14 +35,8 @@ function Footer() {
             <h6>Fale comigo e compartilhe!</h6>
             <div className={styles.contactsContainer}>
               <GithubIcon className={styles.github} href={gitgubAccount} />
-              <LinkedinIcon
-                className={styles.linkedin}
-                href={linkedinAccount}
-              />
-              <WhatsappIcon
-                className={styles.whatsapp}
-                href={whatsappMessage}
-              />
+              <LinkedinIcon className={styles.linkedin} href={linkedinAccount} />
+              <WhatsappIcon className={styles.whatsapp} href={whatsappMessage} />
               <EmailIcon className={styles.email} href={emailAccount} />
             </div>
           </div>
@@ -58,22 +49,14 @@ function Footer() {
             <h6>Fale comigo e compartilhe!</h6>
             <div className={styles.contactsContainer}>
               <GithubIcon className={styles.github} href={gitgubAccount} />
-              <LinkedinIcon
-                className={styles.linkedin}
-                href={linkedinAccount}
-              />
-              <WhatsappIcon
-                className={styles.whatsapp}
-                href={whatsappMessage}
-              />
+              <LinkedinIcon className={styles.linkedin} href={linkedinAccount} />
+              <WhatsappIcon className={styles.whatsapp} href={whatsappMessage} />
               <EmailIcon className={styles.email} href={emailAccount} />
             </div>
           </div>
 
           <div className={styles.copyrightContainer}>
-            <p className={styles.copyright}>
-              © {currentYear} Alex de Jesus. All rights reserved.
-            </p>
+            <p className={styles.copyright}>© {currentYear} Alex de Jesus. All rights reserved.</p>
           </div>
         </footer>
       )}

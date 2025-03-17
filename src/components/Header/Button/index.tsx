@@ -1,12 +1,7 @@
 import styles from "./styles.module.css";
 import type { IHeaderButtonProps } from "./types";
 
-function HeaderButton({
-  children,
-  onClick,
-  href,
-  className,
-}: IHeaderButtonProps) {
+function HeaderButton({ children, onClick, href, className }: IHeaderButtonProps) {
   return (
     <a style={{ textDecoration: "none", color: "inherit" }} href={href}>
       <button

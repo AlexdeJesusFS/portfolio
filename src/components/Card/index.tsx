@@ -6,7 +6,7 @@ function Card({ title, children, text }: ICard) {
     <div className={styles.container}>
       <h5>{title}</h5>
       <div className={styles.tagContainer}>{children}</div>
-      <p>{text}</p>
+      {text}
     </div>
   );
 }

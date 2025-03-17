@@ -104,6 +104,12 @@ strong {
 a {
   color: var(--blue-300);
   padding: 0.2rem 0.2rem;
+  text-align: justify;
+  font-family: var(--secondary-font);
+  font-size: clamp(1.5rem, 1.25vw, 1.7rem);
+  font-style: normal;
+  font-weight: 450;
+  line-height: 2.4rem; /* 141.176% */
 }
 
 a:visited {

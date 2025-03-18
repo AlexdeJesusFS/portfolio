@@ -32,7 +32,7 @@ Abaixo estão listadas as principais tecnologias utilizadas na construção do p
 
 ## ⚡ Melhorias com Lighthouse
 
-Foi utilizada a ferramenta [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview?hl=pt-br) da Google para otimizar o site, trazendo melhorias nos seguintes aspectos:
+Foi utilizada a ferramenta [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview?hl=pt-br) da Google para otimizar o site, o que ajudou a melhorar em:
 
 - 🚀 **Desempenho**
 - ♿ **Acessibilidade**

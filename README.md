@@ -14,7 +14,6 @@
 Este é o meu site pessoal, criado como um **portfólio** para apresentar minhas **habilidades** e **experiências**.
 
 Nele, destaco projetos profissionais que desenvolvi ao longo da minha trajetória e as tecnologias com as quais já trabalhei.
-Também há um espaço reservado para projetos pessoais futuros.
 
 ---
 

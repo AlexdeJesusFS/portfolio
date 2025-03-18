@@ -46,11 +46,15 @@
   display: flex;
   padding: 1.5rem 0rem;
   align-items: center;
-  gap: 6rem;
   align-self: stretch;
+  gap: 6rem;
 
   @include media.tablet {
     gap: 4.8rem;
+  }
+
+  @include media.mobile {
+    gap: 0rem; //remove o gap quando em tela mobile para evitar quebra da responsidade e layout
   }
 }
 

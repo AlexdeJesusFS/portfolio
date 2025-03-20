@@ -1,0 +1,21 @@
+.background {
+  background-image: url("../../assets/404NotFound.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; /* imagem cubra toda a tela */
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column; /* empilha os elementos verticalmente */
+  justify-content: center; /* centraliza na vertical */
+  align-items: center; /* centraliza na horizontal */
+}
+
+.title,
+.subTitle {
+  text-align: center;
+  margin: 5px 0;
+  color: white;
+  text-shadow: -2px -2px 0 red, 2px -2px 0 blue, -2px 2px 0 green, 2px 2px 0 purple;
+}

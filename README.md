@@ -1,7 +1,7 @@
 # Meu Portfólio Pessoal
 
 [![Checked with Biome](https://img.shields.io/badge/Checked_with-Biome-60a5fa?style=flat&logo=biome)](https://biomejs.dev)
-[![Code quality](https://github.com/nasa/openmct/workflows/CodeQL/badge.svg)](https://github.com/AlexdeJesusFS/portfolio/actions/workflows/code-quality.yaml)
+[![Code Quality](https://img.shields.io/badge/Code_Quality-Passing-brightgreen)](https://github.com/AlexdeJesusFS/portfolio/actions/workflows/code-quality.yaml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Powered by Vercel](https://img.shields.io/badge/Powered%20by-Vercel-black?style=flat&logo=vercel)](https://vercel.com)
 
@@ -38,3 +38,16 @@ Foi utilizada a ferramenta [Lighthouse](https://developer.chrome.com/docs/lighth
 - ♿ **Acessibilidade**
 - ✅ **Práticas recomendadas**
 - 🔍 **SEO**
+
+**Valor mínimo de qualidade para todos os tópicos atingidos:**
+
+![resultado final lighthouse](https://github.com/user-attachments/assets/8474416c-2ec0-46b3-9764-054380d9011d)
+
+## Deploy e CI/CD
+
+O site está hospedado na **Vercel**, utilizando sua plataforma moderna para deploy rápido e automatizado com **Continuous Deployment (CD)**. A integração com **GitHub Actions** e **Husky** garante a qualidade do código por meio de **Continuous Integration (CI)**, enquanto o DNS é gerenciado pela **Cloudflare**, aproveitando sua segurança e otimização de desempenho via CDN.
+
+- **Vercel**: Continuous Deploy, cada atualização no repositório atualiza o site automaticamente e com uma um versão para preview na branch staging.
+- **GitHub Actions**: Pipeline de CI para lint e formatação garantindo qualidade de código e 0 erros.
+- **Husky**: Validação local pré-commit para consistência de código.
+- **Cloudflare**: Gerenciamento de DNS com proteção DDoS e cache global para carregamento rápido.

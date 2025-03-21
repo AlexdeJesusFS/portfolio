@@ -10,7 +10,7 @@ function Footer() {
   const gitgubAccount = "https://github.com/AlexdeJesusFS";
   const emailAccount = "mailto:alexjesus864@gmail.com";
   const whatsappMessage =
-    "whatsapp://send?text=Ei, olha esse portfolio que incrível! https://portfolio-alex-de-jesus-projects-4b3496fd.vercel.app/";
+    "whatsapp://send?text=Ei, olha esse portfolio que incrível! https://alexdejesusfs.com.br/";
   const linkedinAccount = "https://www.linkedin.com/in/alexdejesusfs/";
 
   const isMobile = useMediaQuery({ query: "(max-width: 767px)" });

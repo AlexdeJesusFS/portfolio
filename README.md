@@ -17,6 +17,14 @@ Nele, destaco projetos profissionais que desenvolvi ao longo da minha trajetóri
 
 ---
 
+## 🎨 Design e Protótipo
+
+O site foi desenvolvido com base em um design e protótipo inicial criado no [Figma](https://www.figma.com/), que serviram como base para a cosntrução. Durante o processo de criação, segui boas práticas de desenvolvimento e design, como design system, tipografia, componentização, usabilidade e responsividade.
+
+Para ver o protótipo do Figma [clique aqui](https://www.figma.com/design/3GtHYaqVA62W1NZVbkdvaW/%F0%9F%92%BBAlexdeJesusFS?node-id=1-4&t=ozB7TjPN51m3rz2z-1) 
+
+---
+
 ## 🚀 Tecnologias Utilizadas
 
 Abaixo estão listadas as principais tecnologias utilizadas na construção do projeto, incluindo bibliotecas, frameworks e linguagens:
@@ -42,6 +50,8 @@ Foi utilizada a ferramenta [Lighthouse](https://developer.chrome.com/docs/lighth
 **Valor mínimo de qualidade para todos os tópicos atingidos:**
 
 ![resultado final lighthouse](https://github.com/user-attachments/assets/8474416c-2ec0-46b3-9764-054380d9011d)
+
+---
 
 ## Deploy e CI/CD
 

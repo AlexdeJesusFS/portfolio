@@ -2,7 +2,6 @@
 
 [![Checked with Biome](https://img.shields.io/badge/Checked_with-Biome-60a5fa?style=flat&logo=biome)](https://biomejs.dev)
 [![Code Quality](https://img.shields.io/badge/Code_Quality-Passing-brightgreen)](https://github.com/AlexdeJesusFS/portfolio/actions/workflows/code-quality.yaml)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Powered by Vercel](https://img.shields.io/badge/Powered%20by-Vercel-black?style=flat&logo=vercel)](https://vercel.com)
 
 [![Built with React](https://img.shields.io/badge/Built_with-React-61DAFB?style=flat&logo=react)](https://react.dev/)
